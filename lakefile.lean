@@ -32,7 +32,7 @@ you can use `require mathlib from git "[URL]" @ leanVersion`
 
 
 
--- require mathlib from git "https://github.com/leanprover-community/mathlib4.git" @ leanVersion
+require mathlib from git "https://github.com/leanprover-community/mathlib4.git" @ "a45ae63747140c1b2cbad9d46f518015c047047a"
 
 
 

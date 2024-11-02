@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Wed Apr 10 15:31:40 2024\n"
+"POT-Creation-Date: Sat Nov  2 13:48:12 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -20,62 +20,1784 @@ msgstr ""
 msgid "intermediate goal solved! 🎉"
 msgstr ""
 
-#: Game.Levels.DemoWorld.L01_HelloWorld
-msgid "Hello World"
+#: Game.Levels.Tutorial.L01_HelloWorld
+msgid "はじめの一歩"
 msgstr ""
 
-#: Game.Levels.DemoWorld.L01_HelloWorld
-msgid "This text is shown as first message when the level is played.\n"
-"You can insert hints in the proof below. They will appear in this side panel\n"
-"depending on the proof a user provides."
+#: Game.Levels.Tutorial.L01_HelloWorld
+msgid "## 説明\n"
+"`X=X`といった形のゴールを閉じます。\n"
+"これは、**定義として**等しい場合のみ有効です。\n"
+"ただ、このゲームでは関数の値は「公理」として実装されていることが多いので、\n"
+"基本的には左辺と右辺が**完全に**一致する場合のみ有効だと思います。\n"
+"(ちなみに、公理は数学の前提的なもの)"
 msgstr ""
 
-#: Game.Levels.DemoWorld.L01_HelloWorld
-msgid "You can either start using `«{h}»` or `«{g}»`."
+#: Game.Levels.Tutorial.L01_HelloWorld
+msgid "# 最初に読むこと。\n"
+"ここには役立つ情報がたくさん書いてあるはずです。\n"
+"\n"
+"このゲームでやるべきことはシンプル。\n"
+"ゴールとして存在する式を証明することです。\n"
+"...どうやるのかって？「タクティク」を使い、ゴールを変形したり、閉じたりします。\n"
+"\n"
+"## 新しいタクティク：`rfl`\n"
+"このタクティクは$X = X$の形のゴールを閉じます。\n"
+"このステージのゴールに使えそうですね！"
 msgstr ""
 
-#: Game.Levels.DemoWorld.L01_HelloWorld
-msgid "You should use `«{h}»` now."
+#: Game.Levels.Tutorial.L01_HelloWorld
+msgid "$x$と$y$が自然数なら、$33 * x + 24 * y = 33 * x + 24 * y$である。"
 msgstr ""
 
-#: Game.Levels.DemoWorld.L01_HelloWorld
-msgid "You should use `«{g}»` now."
+#: Game.Levels.Tutorial.L01_HelloWorld
+msgid "左辺と右辺が同じ時は、rflを使うとゴールを閉じれます。"
 msgstr ""
 
-#: Game.Levels.DemoWorld.L01_HelloWorld
-msgid "This last message appears if the level is solved."
+#: Game.Levels.Tutorial.L01_HelloWorld
+msgid "「$33 * x + 24 * y = 33 * x + 24 * y$である。だから$33 * x + 24 * y = 33 * x + 24 * y$なのだ。」\n"
+"では済まない命題も結構あるのですが...まあそれの示し方は次のステージで話しましょう。"
 msgstr ""
 
-#: Game.Levels.DemoWorld
-msgid "Demo World"
+#: Game.Levels.Tutorial.L02_ReWrite
+msgid "Eq."
 msgstr ""
 
-#: Game.Levels.DemoWorld
-msgid "This introduction is shown before one enters level 1 of the demo world. Use markdown."
+#: Game.Levels.Tutorial.L02_ReWrite
+msgid "## 説明\n"
+"例えば、`X=Y`という形の仮定や定理`h`があった場合、rewrite[h]を使用することで、\n"
+"ゴール内の**全ての**`X`が`Y`に置き換わります。\n"
+"\n"
+"## 変種\n"
+"`rewrite[←h]` : `Y`が`X`になります。\n"
+"\n"
+"`rewrite[h1,h2]` : `rewrite[h1]`,`rewrite[h2]`を順番に実行します。\n"
+"\n"
+"`rewrite[h1,h2,h3]` : もちろん3つ以上の置き換えも可能です。\n"
+"\n"
+"`rewrite[h1] at h2` : **`h2`に対して**`rewrite[h1]`を実行します。\n"
+"\n"
+"もしかしたら、私が把握できていないだけで他にもあるかも知れません！"
 msgstr ""
 
-#: Game
-msgid "Hello World Game"
+#: Game.Levels.Tutorial.L02_ReWrite
+msgid "## 新しいタクティク：`rw`\n"
+"\n"
+"同じことを表すものってよくありますよね。\n"
+"例えば、「力」と「パワー」や、「1の次の数」と「2」などがあります。\n"
+"Lean4で同じことを表すものを置き換えるときは`rw`を使います。\n"
+"こうすることで、「力」と「パワー」が「力」と「力」になるので、rflが使えます！"
 msgstr ""
 
-#: Game
-msgid "This text appears on the starting page where one selects the world/level to play.\n"
-"You can use markdown."
+#: Game.Levels.Tutorial.L02_ReWrite
+msgid "$e$と$mc$が自然数で、$e=mc ^ 2$なら$e=mc ^ 2$。"
 msgstr ""
 
-#: Game
-msgid "Here you can put additional information about the game. It is accessible\n"
-"from the starting through the drop-down menu.\n"
+#: Game.Levels.Tutorial.L02_ReWrite
+msgid "rewrite[h]を使おう。"
+msgstr ""
+
+#: Game.Levels.Tutorial.L02_ReWrite
+msgid "イースターエッグ発見！ #1"
+msgstr ""
+
+#: Game.Levels.Tutorial.L02_ReWrite
+msgid "いいですね！Lean4では、仮定として用意した等式だけでなく、\n"
+"すでに分かったこと、「定理」(もしくは「補題」)を番う方法もあります！\n"
+"詳細はLv4で！\n"
+"\n"
+"ちなみに、`rewrite`より強いTactic`rw`がありますが、\n"
+"それを使わなかった理由はもちろん、ゲーム性を上げるためです。"
+msgstr ""
+
+#: Game.Levels.Tutorial.L03_etirWeR
+msgid "逆走"
+msgstr ""
+
+#: Game.Levels.Tutorial.L03_etirWeR
+msgid "## 逆方向の置き換え\n"
+"(Lv2で見つけた人もいるかもしれませんが)\n"
+"実は`h : X=Y`という仮定がある場合、\n"
+"ゴールの`X`を`Y`に置き換えるだけでなく、\n"
+"**`Y`を`X`に置き換えることもできます**\n"
+"早速試してみましょう！"
+msgstr ""
+
+#: Game.Levels.Tutorial.L03_etirWeR
+msgid "$x,y,z$が全て自然数で、$z=x$かつ$z=y$なら$x+y=z+z$。"
+msgstr ""
+
+#: Game.Levels.Tutorial.L03_etirWeR
+msgid "`rewrite`のマニュアルは読みましたか？"
+msgstr ""
+
+#: Game.Levels.Tutorial.L03_etirWeR
+msgid "イースターエッグ発見！ #2"
+msgstr ""
+
+#: Game.Levels.Tutorial.L03_etirWeR
+msgid "イースターエッグ発見！ #2"
+msgstr ""
+
+#: Game.Levels.Tutorial.L03_etirWeR
+msgid "このように、数学では\n"
+"「逆から考える」というテクニックが有効なことがあります。\n"
+"ゴールを閉じるために必要なことを考えると、\n"
+"自ずと答えが見えてくるでしょう。"
+msgstr ""
+
+#: Game.Levels.Tutorial.L04_add_zero
+msgid "Thm."
+msgstr ""
+
+#: Game.Levels.Tutorial.L04_add_zero
+msgid "# 定理の使用\n"
+"Leanで使えるのは、仮定だけではありません。\n"
+"すでに分かっていること「定理」も使えます！\n"
 "\n"
-"For example: Game version, Credits, Link to Github and Zulip, etc.\n"
+"## 0は自然数か問題\n"
+"このゲームでは、$0$は自然数であるとします。\n"
+"そうした方が(このゲームでは)都合がいいからです。"
+msgstr ""
+
+#: Game.Levels.Tutorial.L04_add_zero
+msgid "自然数の加算。\n"
+"  add_zero `a + 0 = a` と、\n"
+"  add_succ `a + b′ = (a + b)′`\n"
+"  で定義される。"
+msgstr ""
+
+#: Game.Levels.Tutorial.L04_add_zero
+msgid "$a′ = aの次$\n"
+"  直接入力するなら`\\prime`を使おう！"
+msgstr ""
+
+#: Game.Levels.Tutorial.L04_add_zero
+msgid "## 説明\n"
+"`repeat tactic`とすることで、`tactic`を失敗するまで繰り返します。"
+msgstr ""
+
+#: Game.Levels.Tutorial.L04_add_zero
+msgid "## 説明\n"
+"aを自然数とする。a+0=aである。"
+msgstr ""
+
+#: Game.Levels.Tutorial.L04_add_zero
+msgid "$∀\\{a,b,c\\}∈ℕ^3,a + (b + 0) + (c + 0) = a + b + c$"
+msgstr ""
+
+#: Game.Levels.Tutorial.L04_add_zero
+msgid "`rewrite[add_zero]`で`b+0`が`b`になります。"
+msgstr ""
+
+#: Game.Levels.Tutorial.L04_add_zero
+msgid "実は、`repeat (Tactic)`を使うと、\n"
+"Tacticを失敗するまで繰り返してくれます。便利ですね"
+msgstr ""
+
+#: Game.Levels.Tutorial.L05_A1EqS
+msgid "定理をつくろう(succ_eq_add_one)"
+msgstr ""
+
+#: Game.Levels.Tutorial.L05_A1EqS
+msgid "$a + (0でない適当な自然数)$ に関する定義も欲しいですよね？\n"
+"作っておきました\n"
 "\n"
-"Use markdown."
+"Leanでは、自分で定理を作って証明し、ほかの定理の証明に生かすといったことができます。\n"
+"やってみましょう！"
+msgstr ""
+
+#: Game.Levels.Tutorial.L05_A1EqS
+msgid "## 説明\n"
+"$a,b$を自然数とする。$a + b′ = (a + b)′$ である。"
+msgstr ""
+
+#: Game.Levels.Tutorial.L05_A1EqS
+msgid "## 説明\n"
+"1は0の次です。"
+msgstr ""
+
+#: Game.Levels.Tutorial.L05_A1EqS
+msgid "## 説明\n"
+"$a$が自然数なら、$a+1=a′$である。"
+msgstr ""
+
+#: Game.Levels.Tutorial.L05_A1EqS
+msgid "$∀a∈ℕ,a+1=a′$"
+msgstr ""
+
+#: Game.Levels.Tutorial.L05_A1EqS
+msgid "$1$の定義はなんでしたか？"
+msgstr ""
+
+#: Game.Levels.Tutorial.L05_A1EqS
+msgid "「定義から考える」というコツは意外と有用です。"
+msgstr ""
+
+#: Game.Levels.Tutorial.Boss_notauto
+msgid "BOSS:定理をつかおう"
+msgstr ""
+
+#: Game.Levels.Tutorial.Boss_notauto
+msgid "(ボス戦の曲)\n"
+"\n"
+"先ほど証明した定理`add_one_eq_succ`を使ってみましょう。"
+msgstr ""
+
+#: Game.Levels.Tutorial.Boss_notauto
+msgid "## 説明\n"
+"2は1の次です。"
+msgstr ""
+
+#: Game.Levels.Tutorial.Boss_notauto
+msgid "$1+1=2$"
+msgstr ""
+
+#: Game.Levels.Tutorial.Boss_notauto
+msgid "(ファンファーレのようなSE)\n"
+"\n"
+"右上にある`</>`のようなボタンを押してみてください。\n"
+"「エディターモード」に切り替えられ、数行のコードが表示されるでしょう。\n"
+"カーソルをどこかの行に動かすと、その時点でのゴールが表示されます。\n"
+"コピペを使って証明を保存しておくこともできます！"
+msgstr ""
+
+#: Game.Levels.Tutorial
+msgid "Tutorial"
+msgstr ""
+
+#: Game.Levels.Tutorial
+msgid "チュートリアルです。このワールドでLean4に慣れましょう。"
+msgstr ""
+
+#: Game.Levels.Add.L01_zero_add
+msgid "数学的ドミノ倒し(Zero_add)"
+msgstr ""
+
+#: Game.Levels.Add.L01_zero_add
+msgid "## 説明\n"
+"数学的帰納法を使うために必要なタクティクです。\n"
+"\n"
+"## 構文\n"
+"`induction X` Xについての帰納法を行います。\n"
+"`induction X with Y Z` Xについての帰納法を新たな変数Y、仮定Zを使って行います。"
+msgstr ""
+
+#: Game.Levels.Add.L01_zero_add
+msgid "## あらかじめ言っておきます。\n"
+"**このゲームで和の定義として使われているのは\n"
+"$a+0=a$と$a + b′=(a + b)′$のみです。\n"
+"$0+a=a$は定義として使われていません。**\n"
+"\n"
+"## 数学的帰納法\n"
+"A. $n = 0$の時、P。\n"
+"B. $n = k$の時にPなら、$n = k′$の時もP。\n"
+"この2つが成り立つなら、nがどんな自然数であってもP。\n"
+"このことを使う証明を、数学的帰納法といいます。\n"
+"**自然数がかかわる問題では、かなり使いやすいです!**"
+msgstr ""
+
+#: Game.Levels.Add.L01_zero_add
+msgid "## 説明\n"
+"$x$を自然数とする。$0+x=x$である。"
+msgstr ""
+
+#: Game.Levels.Add.L01_zero_add
+msgid "$∀x∈ℕ,0 + x = x$"
+msgstr ""
+
+#: Game.Levels.Add.L01_zero_add
+msgid "`induction x`"
+msgstr ""
+
+#: Game.Levels.Add.L01_zero_add
+msgid "いいですね！数学的帰納法を使って、いろいろなことを証明してみましょう！"
+msgstr ""
+
+#: Game.Levels.Add.L02_succ_add
+msgid "Lem."
+msgstr ""
+
+#: Game.Levels.Add.L02_succ_add
+msgid "これは交換法則を証明するのに必要な奴です。\n"
+"頑張ってください。\n"
+"え、何でこれが必要なのかって？まあ、やってみればわかりますよ..."
+msgstr ""
+
+#: Game.Levels.Add.L02_succ_add
+msgid "## 説明\n"
+"$x y$を自然数とする。$x′+y=(x+y)′$である。"
+msgstr ""
+
+#: Game.Levels.Add.L02_succ_add
+msgid "$∀\\{x,y\\}∈ℕ^2,x′ + y = (x + y)′$"
+msgstr ""
+
+#: Game.Levels.Add.L02_succ_add
+msgid "`induction y`"
+msgstr ""
+
+#: Game.Levels.Add.L02_succ_add
+msgid "いいですね！"
+msgstr ""
+
+#: Game.Levels.Add.L03_Add_comm
+msgid "Boss:Sym.(add_comm)"
+msgstr ""
+
+#: Game.Levels.Add.L03_Add_comm
+msgid "[それっぽい音楽]\n"
+"\n"
+"交換法則を証明しましょう！頑張ってください！\n"
+"※先ほど証明した`succ_add`を活用しましょう！"
+msgstr ""
+
+#: Game.Levels.Add.L03_Add_comm
+msgid "## 説明\n"
+"$x,y$を自然数とする。$x+y=y+x$である。"
+msgstr ""
+
+#: Game.Levels.Add.L03_Add_comm
+msgid "$∀\\{x,y\\}∈ℕ^2,x + y = y + x$"
+msgstr ""
+
+#: Game.Levels.Add.L03_Add_comm
+msgid "どちらを選んでもいいです。とりあえずxについて帰納法しましょうか。"
+msgstr ""
+
+#: Game.Levels.Add.L03_Add_comm
+msgid "«{n_ih}» が使えるように、式を変形してみましょう。`succ_add`が使えるはずです。"
+msgstr ""
+
+#: Game.Levels.Add.L03_Add_comm
+msgid "お疲れさまでした！このように、整数絡みの問題では帰納法が役立つことが多いです！\n"
+"覚えておきましょう！"
+msgstr ""
+
+#: Game.Levels.Add.L04_add_assoc
+msgid "結合法則(add_assoc)"
+msgstr ""
+
+#: Game.Levels.Add.L04_add_assoc
+msgid "$x+y+z$について話しましょう。\n"
+"これは、$(x+y)+z$でしょうか？それとも、$x+(y+z)$でしょうか？\n"
+"正解は、当然$(x+y)+z$です。+は左から計算するからね。\n"
+"では$(x+y)+z$と$x+(y+z)$にはどのような関係があるのでしょうか？\n"
+"それを調べてみましょう。"
+msgstr ""
+
+#: Game.Levels.Add.L04_add_assoc
+msgid "## 説明\n"
+"x yを自然数とする。x+y=y+xである。"
+msgstr ""
+
+#: Game.Levels.Add.L04_add_assoc
+msgid "$∀\\{x,y,z\\}∈ℕ^3,x + y + z = x + (y + z)$"
+msgstr ""
+
+#: Game.Levels.Add.L04_add_assoc
+msgid "たぶんzに対して帰納法するのが一番楽です。"
+msgstr ""
+
+#: Game.Levels.Add.L04_add_assoc
+msgid "私の回答を載せておきますね：\n"
+"```\n"
+"induction z\n"
+"repeat rewrite[add_zero]\n"
+"rfl\n"
+"rewrite[add_succ,add_succ,add_succ,n_ih]\n"
+"rfl\n"
+"```"
+msgstr ""
+
+#: Game.Levels.Add.L05_add_right_comm
+msgid "指定(add_right_comm)"
+msgstr ""
+
+#: Game.Levels.Add.L05_add_right_comm
+msgid "さあ、先ほど証明した定理を使ってみましょう。\n"
+"実は、定理はそのまま使うだけではなく、変数を指定して使うこともできます。\n"
+"例えば、`rw[add_comm y]`を`x+(y+z)`に対して使うと、\n"
+"`(y+z)+x`ではなく`x+(z+y)`にできます！"
+msgstr ""
+
+#: Game.Levels.Add.L05_add_right_comm
+msgid "## 説明\n"
+"$x,y,z$を自然数とする。$x+y+z=x+z+y$である。"
+msgstr ""
+
+#: Game.Levels.Add.L05_add_right_comm
+msgid "$∀\\{x,y,z\\}∈ℕ^3,x + y + z = x + z + y$"
+msgstr ""
+
+#: Game.Levels.Add.L05_add_right_comm
+msgid "先ほど証明した結合法則が使えないでしょうか？"
+msgstr ""
+
+#: Game.Levels.Add.L05_add_right_comm
+msgid "私の回答を載せておきますね：\n"
+"```\n"
+"rewrite[add_assoc,add_comm y,←add_assoc]\n"
+"rfl\n"
+"```"
+msgstr ""
+
+#: Game.Levels.Add.L06_add_right_cancel
+msgid "→"
+msgstr ""
+
+#: Game.Levels.Add.L06_add_right_cancel
+msgid "## 説明1\n"
+"`t : P → Q`と`h:P`という仮定があるとき、`apply t at h`とすることで\n"
+"`h`が`h : Q`に変化します。\n"
+"\n"
+"## 説明2\n"
+"`t : P → Q`という仮定があり、ゴールが`Q`**Pではないので注意すること**の時、\n"
+"`apply t`とすることでゴールが`P`に変化します。"
+msgstr ""
+
+#: Game.Levels.Add.L06_add_right_cancel
+msgid "## 新しいタクティク:`apply`\n"
+"`rewrite`とはまた違ったゴールの書き換え方を紹介します。\n"
+"これは、「$P$ならば$Q$」のような形の仮定に使えるものです\n"
+"`apply`では、$P$ならば$Q$かつ$P$なら$Q$であるということを使えます！\n"
+"早速使っていきましょう！"
+msgstr ""
+
+#: Game.Levels.Add.L06_add_right_cancel
+msgid "## 説明\n"
+"$x,y,z$を自然数とする。$x+n=y+n$なら$x=y$である。"
+msgstr ""
+
+#: Game.Levels.Add.L06_add_right_cancel
+msgid "## 説明\n"
+"$x,y$を自然数とする。$x′=y′$なら、$x=y$である。"
+msgstr ""
+
+#: Game.Levels.Add.L06_add_right_cancel
+msgid "$∀\\{x,y,n\\}∈ℕ^3,x + n = y + n → x = y$"
+msgstr ""
+
+#: Game.Levels.Add.L06_add_right_cancel
+msgid "とりあえず`induction n`しましょうか。"
+msgstr ""
+
+#: Game.Levels.Add.L06_add_right_cancel
+msgid "succ.injが使えるように変形してみましょう。"
+msgstr ""
+
+#: Game.Levels.Add.L06_add_right_cancel
+msgid "もう一つの書き換えのやり方はわかりましたか？"
+msgstr ""
+
+#: Game.Levels.Add.L07_add_left_cancel
+msgid "↔"
+msgstr ""
+
+#: Game.Levels.Add.L07_add_left_cancel
+msgid "## 説明\n"
+"ゴールと同じ仮定`t`があるとき、`exact t`でゴールを閉じることができます。"
+msgstr ""
+
+#: Game.Levels.Add.L07_add_left_cancel
+msgid "**警告：このレベルでは`rfl`が無効です。**\n"
+"\n"
+"## 新しいタクティク:`exact`\n"
+"`rfl`とはまた違ったゴールの閉じ方を紹介します。\n"
+"これは、ゴールと同じ仮定があるときに使えるものです。\n"
+"`exact` では、$P$ならば$P$であるということを使えます！\n"
+"早速使っていきましょう！"
+msgstr ""
+
+#: Game.Levels.Add.L07_add_left_cancel
+msgid "## 説明\n"
+"$x,y,z$を自然数とする。$n+x=n+y$なら$x=y$である。"
+msgstr ""
+
+#: Game.Levels.Add.L07_add_left_cancel
+msgid "$∀\\{x,y,n\\}∈ℕ^3,n + x = n + y → x = y$"
+msgstr ""
+
+#: Game.Levels.Add.L07_add_left_cancel
+msgid "ここでただ`rewrite[add_comm] at h`を行うと、`x + n`が元に戻るだけです。\n"
+"変数を指定して、`y + n`を交換できるようにしましょう。\n"
+"やり方？W+-5を思い出して！"
+msgstr ""
+
+#: Game.Levels.Add.L07_add_left_cancel
+msgid "ここでただ`exact add_right_cancel`とするだけでは、(案の定)うまく行きません。\n"
+"どうやら今回も、変数**と仮定**を指定する必要がありそうです..."
+msgstr ""
+
+#: Game.Levels.Add.L07_add_left_cancel
+msgid "もう一つのゴールの閉じ方はわかりましたか？"
+msgstr ""
+
+#: Game.Levels.Add.L08_add_right_eq_self
+msgid "標的"
+msgstr ""
+
+#: Game.Levels.Add.L08_add_right_eq_self
+msgid "**警告：このレベルでは`rfl`が無効です。**\n"
+"\n"
+"## rwの変種\n"
+"`nth_rewrite`について紹介しましょう。\n"
+"通常の`rw`は当てはまるものを**全部**置き換えますが、\n"
+"`nth_rewrite x`はx番目だけ置き換えます！"
+msgstr ""
+
+#: Game.Levels.Add.L08_add_right_eq_self
+msgid "## 説明\n"
+"$x,y$を自然数とする。$x+y=x$なら$y=0$である。"
+msgstr ""
+
+#: Game.Levels.Add.L08_add_right_eq_self
+msgid "$∀\\{x,y\\}∈ℕ^2,x + y = x → y = 0$"
+msgstr ""
+
+#: Game.Levels.Add.L08_add_right_eq_self
+msgid "実は、`exact add_left_cancel y 0 x h`などのようなコードは、\n"
+"一部の変数を`_`で置き換えても動くことがあります。その際、それっぽい変数が自動的に設定されます！\n"
+"E.g. `exact add_left_cancel _ _ _ h`"
+msgstr ""
+
+#: Game.Levels.Add.L08_add_right_eq_self
+msgid "## 説明\n"
+"Why can you see this message?"
+msgstr ""
+
+#: Game.Levels.Add.L09_add_left_eq_self
+msgid "Cor."
+msgstr ""
+
+#: Game.Levels.Add.L09_add_left_eq_self
+msgid "**警告：このレベルでは`rfl`が無効です。**\n"
+"## 系\n"
+"ある定理について、\n"
+"そこから簡単に(明らかであるとして証明が省略されるくらいに)証明できる定理です。\n"
+"これもその一例ですね。"
+msgstr ""
+
+#: Game.Levels.Add.L09_add_left_eq_self
+msgid "## 説明\n"
+"$x,y$を自然数とする。$x+y=y$なら$x=0$である。"
+msgstr ""
+
+#: Game.Levels.Add.L09_add_left_eq_self
+msgid "$∀{x,y}∈ℕ^2,x + y = y → x = 0$"
+msgstr ""
+
+#: Game.Levels.Add.L09_add_left_eq_self
+msgid "`apply`と`exact`を使いこなせましたか？さあ、次のレベルで確認してみましょう！"
+msgstr ""
+
+#: Game.Levels.Add.Boss_1_ne_2
+msgid "Boss:⊥"
+msgstr ""
+
+#: Game.Levels.Add.Boss_1_ne_2
+msgid "## ⊥\n"
+"数学には、正しいことだけではなく、間違っていることもあります。\n"
+"例えば、$4=5$などです。これが間違っているを証明するにも、\n"
+"`apply`と`exact`を使えます！"
+msgstr ""
+
+#: Game.Levels.Add.Boss_1_ne_2
+msgid "## 説明\n"
+"どんな自然数$x$でも$0≠x′$"
+msgstr ""
+
+#: Game.Levels.Add.Boss_1_ne_2
+msgid "$1≠2$"
+msgstr ""
+
+#: Game.Levels.Add.Boss_1_ne_2
+msgid "お疲れさまでした！このワールドで学んだことは数学上の様々なことに生かせます！\n"
+"うまく使っていきましょう！"
+msgstr ""
+
+#: Game.Levels.Add
+msgid "World +"
+msgstr ""
+
+#: Game.Levels.Add
+msgid "このワールドでは、整数や数学で重要な概念\n"
+"「帰納法」「含意」というものを使います。\n"
+"身構える必要はないですよ。\n"
+"「帰納法」はただの(ドミノが無限にある)(数学的な)ドミノ倒しですし、\n"
+"「含意」は「AならB」みたいな意外とわかりやすいことですから。"
+msgstr ""
+
+#: Game.Levels.Mul.L01_mul_one
+msgid "等倍(Mul_one)"
+msgstr ""
+
+#: Game.Levels.Mul.L01_mul_one
+msgid "掛け算のチュートリアルです。\n"
+"掛け算は、$n*0=0$と$m*n′=m*n+m$の2つで定義されます。\n"
+"足し算の時と似ていますね。\n"
+"足し算の時と要領はそこまで変わらないはずです。\n"
+"**恐れずにやってみろ！(これ大事)**"
+msgstr ""
+
+#: Game.Levels.Mul.L01_mul_one
+msgid "## 説明\n"
+"$x$を自然数とする。$x*1=x$である。"
+msgstr ""
+
+#: Game.Levels.Mul.L01_mul_one
+msgid "自然数の乗算。\n"
+"  mul_zero `a * 0 = 0` と、\n"
+"  mul_succ `a * b′ = a * b + a`\n"
+"  で定義される。"
+msgstr ""
+
+#: Game.Levels.Mul.L01_mul_one
+msgid "## 説明\n"
+"$a$を自然数とする。$a*0=a$である。"
+msgstr ""
+
+#: Game.Levels.Mul.L01_mul_one
+msgid "## 説明\n"
+"$a,b$を自然数とする。$a\\*b′=a*b+a$である。"
+msgstr ""
+
+#: Game.Levels.Mul.L01_mul_one
+msgid "$∀n∈ℕ,n × 1 = n$"
+msgstr ""
+
+#: Game.Levels.Mul.L01_mul_one
+msgid "1って何だっけ?"
+msgstr ""
+
+#: Game.Levels.Mul.L01_mul_one
+msgid "掛け算も、意外と簡単ですね。"
+msgstr ""
+
+#: Game.Levels.Mul.L02_zero_mul
+msgid "虚無(zero_mul)"
+msgstr ""
+
+#: Game.Levels.Mul.L02_zero_mul
+msgid "## Leanに確認してもらおう！\n"
+"「うまく行ってると思っていたら、途中でミスに気づいて全部やり直し」\n"
+"みたいなこと、よくありますよね?\n"
+"Leanでは、証明が正しいことのチェックを自動的に行ってくれます！"
+msgstr ""
+
+#: Game.Levels.Mul.L02_zero_mul
+msgid "## 説明\n"
+"$x$を自然数とする。$0*x=0$である。"
+msgstr ""
+
+#: Game.Levels.Mul.L02_zero_mul
+msgid "$∀n∈ℕ,0 × n = 0$"
+msgstr ""
+
+#: Game.Levels.Mul.L02_zero_mul
+msgid "掛け算も、意外と簡単ですね。"
+msgstr ""
+
+#: Game.Levels.Mul.L03_succ_mul
+msgid "反転(succ_mul)"
+msgstr ""
+
+#: Game.Levels.Mul.L03_succ_mul
+msgid "足し算と要領は変わらないはずです。頑張れ！"
+msgstr ""
+
+#: Game.Levels.Mul.L03_succ_mul
+msgid "## 説明\n"
+"$m,n$を自然数とする。$m′\\*n=m\\*n+n$である。"
+msgstr ""
+
+#: Game.Levels.Mul.L03_succ_mul
+msgid "$∀\\{n,m\\}∈ℕ²,m′ × n = m ⨯ n + n$"
+msgstr ""
+
+#: Game.Levels.Mul.L03_succ_mul
+msgid "他の定理の証明を振り返ってみることは大切です。意外と形が似ていることが多いです。"
+msgstr ""
+
+#: Game.Levels.Mul.L03_succ_mul
+msgid "`mul_succ`を使って、ゴールをシンプルにしてみましょう。"
+msgstr ""
+
+#: Game.Levels.Mul.L03_succ_mul
+msgid "うまいこと足す順番を入れ替えたら、証明できる気がしませんか？"
+msgstr ""
+
+#: Game.Levels.Mul.L03_succ_mul
+msgid "さて、`mul_comm`の証明に挑みましょう！"
+msgstr ""
+
+#: Game.Levels.Mul.L04_mul_comm
+msgid "交換(mul_comm)"
+msgstr ""
+
+#: Game.Levels.Mul.L04_mul_comm
+msgid "足し算と要領は変わらないはずです。頑張れ！(2回目)"
+msgstr ""
+
+#: Game.Levels.Mul.L04_mul_comm
+msgid "## 説明\n"
+"$m,n$を自然数とする。$m\\*n=n\\*m$である。"
+msgstr ""
+
+#: Game.Levels.Mul.L04_mul_comm
+msgid "$∀\\{n,m\\}∈ℕ²,m × n = n ⨯ m$"
+msgstr ""
+
+#: Game.Levels.Mul.L04_mul_comm
+msgid "まだ山場はたくさんあるぞ...!"
+msgstr ""
+
+#: Game.Levels.Mul.L05_one_mul
+msgid "不変(one_mul)"
+msgstr ""
+
+#: Game.Levels.Mul.L05_one_mul
+msgid "これはいろいろな方法で証明できます!\n"
+"帰納法、交換法則、`succ_mul`...\n"
+"一番楽な方法はなんでしょうか?"
+msgstr ""
+
+#: Game.Levels.Mul.L05_one_mul
+msgid "## 説明\n"
+"$n$を自然数とする。$1\\*n=n$である。"
+msgstr ""
+
+#: Game.Levels.Mul.L05_one_mul
+msgid "$∀n∈ℕ,1 × n = n$"
+msgstr ""
+
+#: Game.Levels.Mul.L05_one_mul
+msgid "たぶんこれが一番早いと思います"
+msgstr ""
+
+#: Game.Levels.Mul.L05_one_mul
+msgid "イースターエッグ発見！ #3"
+msgstr ""
+
+#: Game.Levels.Mul.L05_one_mul
+msgid "いろいろな方法で証明ができるぞ...!"
+msgstr ""
+
+#: Game.Levels.Mul.L06_two_mul
+msgid "倍増(two_mul)"
+msgstr ""
+
+#: Game.Levels.Mul.L06_two_mul
+msgid "何で入れた？？？？"
+msgstr ""
+
+#: Game.Levels.Mul.L06_two_mul
+msgid "## 説明\n"
+"$n$を自然数とする。$2\\*n=n+n$である。"
+msgstr ""
+
+#: Game.Levels.Mul.L06_two_mul
+msgid "$∀n∈ℕ,2 × n = n + n$"
+msgstr ""
+
+#: Game.Levels.Mul.L06_two_mul
+msgid "これ絶対数合わせだよね？？？"
+msgstr ""
+
+#: Game.Levels.Mul.L07_mul_add
+msgid "分散(mul_add)"
+msgstr ""
+
+#: Game.Levels.Mul.L07_mul_add
+msgid "[ボス戦の曲]"
+msgstr ""
+
+#: Game.Levels.Mul.L07_mul_add
+msgid "## 説明\n"
+"$a,b,c$を自然数とする。$a(b+c)=ab+ac$である。"
+msgstr ""
+
+#: Game.Levels.Mul.L07_mul_add
+msgid "$∀\\{a,b,c\\}∈ℕ³,a(b+c) = ab + ac$"
+msgstr ""
+
+#: Game.Levels.Mul.L07_mul_add
+msgid "aの帰納法で始めるのだけはやめろ...正直言って、一番面倒だ..."
+msgstr ""
+
+#: Game.Levels.Mul.L07_mul_add
+msgid "🎉"
+msgstr ""
+
+#: Game.Levels.Mul.L08_add_mul
+msgid "分散 Ⅱ (add_mul)"
+msgstr ""
+
+#: Game.Levels.Mul.L08_add_mul
+msgid "頑張ってください！"
+msgstr ""
+
+#: Game.Levels.Mul.L08_add_mul
+msgid "## 説明\n"
+"$a,b,c$を自然数とする。$(a+b)c=ac+bc$である。"
+msgstr ""
+
+#: Game.Levels.Mul.L08_add_mul
+msgid "$∀\\{a,b,c\\}∈ℕ³,a(b+c) = ab + ac$"
+msgstr ""
+
+#: Game.Levels.Mul.L08_add_mul
+msgid "`rewrite[mul_comm]`"
+msgstr ""
+
+#: Game.Levels.Mul.L08_add_mul
+msgid "さあ、`mul_assoc`に挑もう...!"
+msgstr ""
+
+#: Game.Levels.Mul.L09_mul_assoc
+msgid "Boss : 結合 (mul_assoc)"
+msgstr ""
+
+#: Game.Levels.Mul.L09_mul_assoc
+msgid "[ボス戦のBGM]"
+msgstr ""
+
+#: Game.Levels.Mul.L09_mul_assoc
+msgid "## 説明\n"
+"$a,b,c$を自然数とする。$(ab)c=a(bc)$である。"
+msgstr ""
+
+#: Game.Levels.Mul.L09_mul_assoc
+msgid "$∀\\{a,b,c\\}∈ℕ³,a(bc) = (ab)c$"
+msgstr ""
+
+#: Game.Levels.Mul.L09_mul_assoc
+msgid "とりあえず帰納法を使いましょう。\n"
+"先ほど証明した`mul_add`を活用できるはずです。\n"
+"今まで証明した定理を振り返るのも大事ですよ。"
+msgstr ""
+
+#: Game.Levels.Mul.L09_mul_assoc
+msgid "おつかれさま～\n"
+"新しいワールド「World ^」に挑んでみて～"
+msgstr ""
+
+#: Game.Levels.Mul
+msgid "World x"
+msgstr ""
+
+#: Game.Levels.Mul
+msgid "このワールドでは、掛け算についての定理を証明します。\n"
+"World +で使った「帰納法」とやらを活用してみましょう！"
+msgstr ""
+
+#: Game.Levels.Pow.L01_pow_one
+msgid "Re:等倍(pow_one)"
+msgstr ""
+
+#: Game.Levels.Pow.L01_pow_one
+msgid "累乗のチュートリアルです。\n"
+"累乗は、$n^0=1$と$m^{n′}=m^nm$の2つで定義されます。\n"
+"掛け算の時と似ていますね。\n"
+"掛け算の時と要領はそこまで変わらないはずです。\n"
+"**恐れずにやってみろ！(これ大事)**"
+msgstr ""
+
+#: Game.Levels.Pow.L01_pow_one
+msgid "## 説明\n"
+"$x$を自然数とする。$x^1=x$である。"
+msgstr ""
+
+#: Game.Levels.Pow.L01_pow_one
+msgid "自然数の累乗。\n"
+"  pow_zero `a ^ 0 = 1` と、\n"
+"  pow_succ `a ^ b′ = a ^ b * a`\n"
+"  で定義される。"
+msgstr ""
+
+#: Game.Levels.Pow.L01_pow_one
+msgid "## 説明\n"
+"$a$を自然数とする。$a^0=1$である。"
+msgstr ""
+
+#: Game.Levels.Pow.L01_pow_one
+msgid "## 説明\n"
+"$a,b$を自然数とする。$a^b′=a^b\\*a$である。"
+msgstr ""
+
+#: Game.Levels.Pow.L01_pow_one
+msgid "$∀x∈ℕ,x^1=x$"
+msgstr ""
+
+#: Game.Levels.Pow.L01_pow_one
+msgid "累乗も、意外と簡単ですね。。"
+msgstr ""
+
+#: Game.Levels.Pow.L02_zero_pow
+msgid "Re:虚無(zero_pow)"
+msgstr ""
+
+#: Game.Levels.Pow.L02_zero_pow
+msgid "## Leanに確認してもらおう！\n"
+"「うまく行ってると思っていたら、途中でミスに気づいて全部やり直し」\n"
+"みたいなこと、よくありますよね?\n"
+"Leanでは、証明が正しいことのチェックを自動的に行ってくれます！\n"
+"...あれ？何か既視感がある..."
+msgstr ""
+
+#: Game.Levels.Pow.L02_zero_pow
+msgid "## 説明\n"
+"$x$を自然数とする。$0^{x′} = 0$である。"
+msgstr ""
+
+#: Game.Levels.Pow.L02_zero_pow
+msgid "$∀x∈ℕ,0^{x′}=0$"
+msgstr ""
+
+#: Game.Levels.Pow.L02_zero_pow
+msgid "ちなみに、$0^0=1$です。このゲームの中では..."
+msgstr ""
+
+#: Game.Levels.Pow.L03_one_pow
+msgid "Re:不変(one_pow)"
+msgstr ""
+
+#: Game.Levels.Pow.L03_one_pow
+msgid "掛け算と要領は変わらないはずです。頑張れ！"
+msgstr ""
+
+#: Game.Levels.Pow.L03_one_pow
+msgid "## 説明\n"
+"$x$を自然数とする。$1^x=1$である。"
+msgstr ""
+
+#: Game.Levels.Pow.L03_one_pow
+msgid "$∀x∈ℕ,1^x=1$"
+msgstr ""
+
+#: Game.Levels.Pow.L03_one_pow
+msgid "普段と変わらない日常も好きです。by 作者"
+msgstr ""
+
+#: Game.Levels.Pow.L04_pow_add
+msgid "対数(pow_add)"
+msgstr ""
+
+#: Game.Levels.Pow.L04_pow_add
+msgid "対数って、大きな数を表すとき便利ですよね。\n"
+"実は身近なところでも使われています(?)。\n"
+"「浮動小数点型」で調べてみるといいですよ。"
+msgstr ""
+
+#: Game.Levels.Pow.L04_pow_add
+msgid "## 説明\n"
+"$x$を自然数とする。$x^{a+b}=x^a x^b$である。"
+msgstr ""
+
+#: Game.Levels.Pow.L04_pow_add
+msgid "$∀\\{x,a,b\\}∈ℕ³→x^{a+b}=x^a x^b$"
+msgstr ""
+
+#: Game.Levels.Pow.L04_pow_add
+msgid "まあ、`induction b`ですね。"
+msgstr ""
+
+#: Game.Levels.Pow.L04_pow_add
+msgid "私は競プロ勢なので、double型はあまり使いません　by 作者"
+msgstr ""
+
+#: Game.Levels.Pow.L05_mul_pow
+msgid "上底(mul_pow)"
+msgstr ""
+
+#: Game.Levels.Pow.L05_mul_pow
+msgid "Try it!"
+msgstr ""
+
+#: Game.Levels.Pow.L05_mul_pow
+msgid "## 説明\n"
+"$x$を自然数とする。$(ab)^x=a^x b^x$である。"
+msgstr ""
+
+#: Game.Levels.Pow.L05_mul_pow
+msgid "$∀\\{x,a,b\\}∈ℕ³→(ab)^x=a^x b^x$"
+msgstr ""
+
+#: Game.Levels.Pow.L05_mul_pow
+msgid "`mul_comm`を使うとき、その後ろに何かしらを指定する必要があります。"
+msgstr ""
+
+#: Game.Levels.Pow.L05_mul_pow
+msgid "Nice try!"
+msgstr ""
+
+#: Game.Levels.Pow.L06_pow_two
+msgid "四角(mul_pow)"
+msgstr ""
+
+#: Game.Levels.Pow.L06_pow_two
+msgid "理解していればできるはずです。"
+msgstr ""
+
+#: Game.Levels.Pow.L06_pow_two
+msgid "## 説明\n"
+"$x$を自然数とする。$x ^ 2= xx$である。"
+msgstr ""
+
+#: Game.Levels.Pow.L06_pow_two
+msgid "$∀x∈ℕ,x^2=xx$"
+msgstr ""
+
+#: Game.Levels.Pow.L06_pow_two
+msgid "Nice try!"
+msgstr ""
+
+#: Game.Levels.Pow.L07_pow_mul
+msgid "乗数(pow_mul)"
+msgstr ""
+
+#: Game.Levels.Pow.L07_pow_mul
+msgid "$x^{y^z}$について話しましょう。\n"
+"これは、$(x^y)^z$でしょうか？それとも、$x^{(y^z)}$でしょうか？\n"
+"正解は、当然$x^{(y^z)}$です。^は右から計算するからね。\n"
+"...これ、前に書いたことがあるような...?"
+msgstr ""
+
+#: Game.Levels.Pow.L07_pow_mul
+msgid "## 説明\n"
+"$x,a,b$を自然数とする。$(x ^ a) ^ b= x^{ab}$である。"
+msgstr ""
+
+#: Game.Levels.Pow.L07_pow_mul
+msgid "$∀\\{x,a,b\\}∈ℕ³→(x^a)^b=x^{ab}$"
+msgstr ""
+
+#: Game.Levels.Pow.L07_pow_mul
+msgid "まあ、`induction a`ですね。"
+msgstr ""
+
+#: Game.Levels.Pow.L07_pow_mul
+msgid "そろそろ気づいてる人もいると思いますが、\n"
+"`World ^`はすべて今までのステージが元ネタになっています。"
+msgstr ""
+
+#: Game.Levels.Pow
+msgid "World ^"
+msgstr ""
+
+#: Game.Levels.Pow
+msgid "このワールドでは、累乗についての定理を証明します。\n"
+"World xがさらに難しく(?)なりました！"
+msgstr ""
+
+#: Game.Levels.Le.L01_zero_le
+msgid "虚無以上(zero_le)"
+msgstr ""
+
+#: Game.Levels.Le.L01_zero_le
+msgid "## $∃$\n"
+"$∃$について説明しましょう。\n"
+"$∃v,P(v)$は$P(v)$を満たす$v$があることを表しています。\n"
+"このような形の命題を証明するときは、条件を満たす具体的な値`w`を見つけ、\n"
+"\n"
+"## `exists w`\n"
+"\n"
+"を使えばよいです！\n"
+"\n"
+"## ≤の意味\n"
+"`a ≤ b`と`∃ (c : ℕ), b = a + c`は同じ意味です。\n"
+"そのため、`exists`が使えます！"
+msgstr ""
+
+#: Game.Levels.Le.L01_zero_le
+msgid "## 説明\n"
+"$n$を自然数とする。$0≤n$である。"
+msgstr ""
+
+#: Game.Levels.Le.L01_zero_le
+msgid "自然数の大小比較\n"
+"  `a ≤ b ↔ ∃ (c : ℕ), b = a + c`"
+msgstr ""
+
+#: Game.Levels.Le.L01_zero_le
+msgid "`∃x,P x`は、P xを満たすxが存在することを表しています。\n"
+"  直接入力するなら`\\ex`を使おう！"
+msgstr ""
+
+#: Game.Levels.Le.L01_zero_le
+msgid "## 説明\n"
+"`∃v,P(v)`に対して、`exists w`を使うと、ゴールが`P(w)`に変化します。"
+msgstr ""
+
+#: Game.Levels.Le.L01_zero_le
+msgid "$∀n∈ℕ,0 ≤ n$"
+msgstr ""
+
+#: Game.Levels.Le.L01_zero_le
+msgid "`exists n`"
+msgstr ""
+
+#: Game.Levels.Le.L01_zero_le
+msgid "≤も、意外と簡単ですね。"
+msgstr ""
+
+#: Game.Levels.Le.L02_le_rfl
+msgid "それはそれ以上(le_rfl)"
+msgstr ""
+
+#: Game.Levels.Le.L02_le_rfl
+msgid "「以上」って、(数学ではもちろん$≥$ですが)\n"
+"$>$として使われることも$≥$として使われることもありますよね。\n"
+"なんでなんでしょうか。"
+msgstr ""
+
+#: Game.Levels.Le.L02_le_rfl
+msgid "## 説明\n"
+"$n$を自然数とする。$n≤n$である。"
+msgstr ""
+
+#: Game.Levels.Le.L02_le_rfl
+msgid "$∀n∈ℕ,n ≤ n$"
+msgstr ""
+
+#: Game.Levels.Le.L02_le_rfl
+msgid "add_zero"
+msgstr ""
+
+#: Game.Levels.Le.L02_le_rfl
+msgid "誰かわかる人、教えてください"
+msgstr ""
+
+#: Game.Levels.Le.L03_le_succ
+msgid "一歩ずつ前へ(le_succ)"
+msgstr ""
+
+#: Game.Levels.Le.L03_le_succ
+msgid "一歩ずつ前へ、進んでいきましょう。\n"
+"「千里の道も一歩から」です。"
+msgstr ""
+
+#: Game.Levels.Le.L03_le_succ
+msgid "## 説明\n"
+"$n$を自然数とする。$n≤n′$である。"
+msgstr ""
+
+#: Game.Levels.Le.L03_le_succ
+msgid "$∀n∈ℕ,n ≤ n′$"
+msgstr ""
+
+#: Game.Levels.Le.L03_le_succ
+msgid "add_one_eq_succ"
+msgstr ""
+
+#: Game.Levels.Le.L03_le_succ
+msgid "使える定理を振り返ることはいつでも大事ですよ！"
+msgstr ""
+
+#: Game.Levels.Le.L04_le_trans
+msgid "つながる　つなげる(le_trans)"
+msgstr ""
+
+#: Game.Levels.Le.L04_le_trans
+msgid "想いはきっと、未来へつながる。\n"
+"## `cases`\n"
+"新しいtactic `cases`が利用可能になりました。\n"
+"このtacticは、∃を含む仮定に対して効果的です。(他にも何か?)"
+msgstr ""
+
+#: Game.Levels.Le.L04_le_trans
+msgid "## 使用法1 : 0 or not\n"
+"`n : ℕ` があるときにゴール`P n`に対して`cases n with d`を使うと、ゴールが`P 0`と`P (d‘)`になる。\n"
+"\n"
+"## 使用法2 : 場合分け\n"
+"`h : P ∨ Q`があるときに`cases h with h1 h2`を使うと、`P`である場合のゴールと`Q`である場合のゴールが作られる。`h`は消える。\n"
+"\n"
+"## 使用法3 : ≤\n"
+"`h : a ≤ b`があるときに`cases h with c hc`を使うと、`h`が`hc : b = a + c`に変化する。"
+msgstr ""
+
+#: Game.Levels.Le.L04_le_trans
+msgid "## 説明\n"
+"$a,b,c$を自然数とする。$a≤b∧b≤c$なら$a≤c$である。"
+msgstr ""
+
+#: Game.Levels.Le.L04_le_trans
+msgid "$∀\\{a,b,c\\}∈ℕ³,a ≤ b∧b ≤ c → a ≤ c$"
+msgstr ""
+
+#: Game.Levels.Le.L04_le_trans
+msgid "不等号の世界へようこそ。"
+msgstr ""
+
+#: Game.Levels.Le.L05_le_zero
+msgid "Boss:虚像(le_zero)"
+msgstr ""
+
+#: Game.Levels.Le.L05_le_zero
+msgid "World Add-10で出てきたFalseのことを覚えていますか？\n"
+"Falseからはどんな命題も導けます。\n"
+"このステージは、Falseを何とかして導くことがポイントです！"
+msgstr ""
+
+#: Game.Levels.Le.L05_le_zero
+msgid "## 説明\n"
+"偽を仮定すれば、全ての命題が真である。"
+msgstr ""
+
+#: Game.Levels.Le.L05_le_zero
+msgid "## 説明\n"
+"$a$を自然数とする。$a≤0$なら$a=0$である。"
+msgstr ""
+
+#: Game.Levels.Le.L05_le_zero
+msgid "$∀a∈ℕ,a ≤ 0 → a = 0$"
+msgstr ""
+
+#: Game.Levels.Le.L05_le_zero
+msgid "まずは∃のcasesから始めよう"
+msgstr ""
+
+#: Game.Levels.Le.L05_le_zero
+msgid "次に自然数のcasesをしよう"
+msgstr ""
+
+#: Game.Levels.Le.L05_le_zero
+msgid "Falseを導くためには...?"
+msgstr ""
+
+#: Game.Levels.Le.L05_le_zero
+msgid "おつかれ！"
+msgstr ""
+
+#: Game.Levels.Le.L06_le_symm
+msgid "双鏡(le_symm)"
+msgstr ""
+
+#: Game.Levels.Le.L06_le_symm
+msgid "Try It!"
+msgstr ""
+
+#: Game.Levels.Le.L06_le_symm
+msgid "## 説明\n"
+"$a,b$を自然数とする。$a≤b$かつ$b≤a$なら$a=b$である。"
+msgstr ""
+
+#: Game.Levels.Le.L06_le_symm
+msgid "$∀\\{a,b\\}∈ℕ²,a ≤ b ∧ b ≤ a → a = b$"
+msgstr ""
+
+#: Game.Levels.Le.L06_le_symm
+msgid "仮定で不等号は即`cases`!"
+msgstr ""
+
+#: Game.Levels.Le.L06_le_symm
+msgid "`a = a + w + w_1`"
+msgstr ""
+
+#: Game.Levels.Le.L06_le_symm
+msgid "`0 = «{w_1}»`を示しましょう。`cases «{w_1}»`でどうぞ。"
+msgstr ""
+
+#: Game.Levels.Le.L06_le_symm
+msgid "`0 = «{w}»`を示しましょう。`cases «{w}»`でどうぞ。"
+msgstr ""
+
+#: Game.Levels.Le.L06_le_symm
+msgid "おつかれ！"
+msgstr ""
+
+#: Game.Levels.Le.L07_or_cases
+msgid "論理和"
+msgstr ""
+
+#: Game.Levels.Le.L07_or_cases
+msgid "`cases`が使える命題をもう一つ紹介します。\n"
+"`P ∨ Q`にたいし`cases`を使うと、\n"
+"`P`の場合のゴールと\n"
+"`Q`の場合のゴールが生成されます！"
+msgstr ""
+
+#: Game.Levels.Le.L07_or_cases
+msgid "## 説明\n"
+"$P$とする。$P∨Q$である。"
+msgstr ""
+
+#: Game.Levels.Le.L07_or_cases
+msgid "## 説明\n"
+"$Q$とする。$P∨Q$である。"
+msgstr ""
+
+#: Game.Levels.Le.L07_or_cases
+msgid "$∀a∈ℕ,(a = 50 ∨ a = 73) → (a = 73 ∨ a = 50)$"
+msgstr ""
+
+#: Game.Levels.Le.L07_or_cases
+msgid "そうですね、`cases h`です"
+msgstr ""
+
+#: Game.Levels.Le.L07_or_cases
+msgid "このレベルは非常に簡単です。\n"
+"つまり、**この次のレベルがめちゃくちゃ難しい**ってこと！"
+msgstr ""
+
+#: Game.Levels.Le.L08_le_total
+msgid "補完(Le_total)"
+msgstr ""
+
+#: Game.Levels.Le.L08_le_total
+msgid "`cases`をフル活用してみましょう！"
+msgstr ""
+
+#: Game.Levels.Le.L08_le_total
+msgid "## 説明\n"
+"$a,b$を自然数とする。`a≤b`か`b′≤a`である。"
+msgstr ""
+
+#: Game.Levels.Le.L08_le_total
+msgid "$∀\\{a,b\\}∈ℕ²,a≤b∨b′≤a$"
+msgstr ""
+
+#: Game.Levels.Le.L08_le_total
+msgid "まずは`induction a`！"
+msgstr ""
+
+#: Game.Levels.Le.L08_le_total
+msgid "つぎに∨のcases！"
+msgstr ""
+
+#: Game.Levels.Le.L08_le_total
+msgid "さらに≤のcases！"
+msgstr ""
+
+#: Game.Levels.Le.L08_le_total
+msgid "ついでに`«{w}»`もcases！"
+msgstr ""
+
+#: Game.Levels.Le.L08_le_total
+msgid "無事に`cases`を使いこなせましたね！"
+msgstr ""
+
+#: Game.Levels.Le
+msgid "World ≤"
+msgstr ""
+
+#: Game.Levels.Le
+msgid "このワールドは、World +で使った「合意」を活用します。\n"
+"頑張ってください!"
+msgstr ""
+
+#: Game.Levels.MulEX.L01_mul_eq_zero
+msgid "因数分解(mul_eq_zero)"
+msgstr ""
+
+#: Game.Levels.MulEX.L01_mul_eq_zero
+msgid "ハードモードへようこそ。"
+msgstr ""
+
+#: Game.Levels.MulEX.L01_mul_eq_zero
+msgid "## 説明\n"
+"$a=b$なら$b=a$"
+msgstr ""
+
+#: Game.Levels.MulEX.L01_mul_eq_zero
+msgid "## 説明\n"
+"$a,b$を自然数とする。$ab=0$なら$a=0$か$b=0$である。"
+msgstr ""
+
+#: Game.Levels.MulEX.L01_mul_eq_zero
+msgid "$∀\\{a,b\\}∈ℕ² ,ab = 0 → a=0∨b=0$"
+msgstr ""
+
+#: Game.Levels.MulEX.L01_mul_eq_zero
+msgid "`cases`でどうぞ"
+msgstr ""
+
+#: Game.Levels.MulEX.L01_mul_eq_zero
+msgid "次行きましょう。"
+msgstr ""
+
+#: Game.Levels.MulEX.L02_mul_le_mul_right
+msgid "大小関係(mul_le_mul_right)"
+msgstr ""
+
+#: Game.Levels.MulEX.L02_mul_le_mul_right
+msgid "これは≤タブと*タブのどちらに入れるべきでしょうか..."
+msgstr ""
+
+#: Game.Levels.MulEX.L02_mul_le_mul_right
+msgid "## 説明\n"
+"$a,b,m$を自然数とする。$a≤b$なら$a\\*m≤b\\*m$である。"
+msgstr ""
+
+#: Game.Levels.MulEX.L02_mul_le_mul_right
+msgid "$∀\\{a,b,m\\}∈ℕ³ ,a ≤ b → am≤bm$"
+msgstr ""
+
+#: Game.Levels.MulEX.L02_mul_le_mul_right
+msgid "`cases`でどうぞ"
+msgstr ""
+
+#: Game.Levels.MulEX.L02_mul_le_mul_right
+msgid "あなたはどうおもいます？"
+msgstr ""
+
+#: Game.Levels.MulEX.L03_le_mul_right
+msgid "複製(le_mul_right)"
+msgstr ""
+
+#: Game.Levels.MulEX.L03_le_mul_right
+msgid "2倍！3倍！"
+msgstr ""
+
+#: Game.Levels.MulEX.L03_le_mul_right
+msgid "## 説明\n"
+"$a,b$を自然数とする。$a≤a*b′$である。"
+msgstr ""
+
+#: Game.Levels.MulEX.L03_le_mul_right
+msgid "$∀\\{a,b\\}∈ℕ² , a≤a(b′)$"
+msgstr ""
+
+#: Game.Levels.MulEX.L03_le_mul_right
+msgid "`cases`でどうぞ"
+msgstr ""
+
+#: Game.Levels.MulEX.L03_le_mul_right
+msgid "なんか`cases`の役割多くない？"
+msgstr ""
+
+#: Game.Levels.MulEX.L04_mul_eq_self
+msgid "複製失敗(mul_right_eq_one)"
+msgstr ""
+
+#: Game.Levels.MulEX.L04_mul_eq_self
+msgid "等倍！"
+msgstr ""
+
+#: Game.Levels.MulEX.L04_mul_eq_self
+msgid "## 説明\n"
+"$a,b$を自然数とする。$a′b=a′$なら$b=1$である。"
+msgstr ""
+
+#: Game.Levels.MulEX.L04_mul_eq_self
+msgid "$∀\\{a,b\\}∈ℕ²,a′*b=a′→b=1$"
+msgstr ""
+
+#: Game.Levels.MulEX.L04_mul_eq_self
+msgid "`cases`でどうぞ。案の定。"
+msgstr ""
+
+#: Game.Levels.MulEX.L04_mul_eq_self
+msgid "ここで`«{h}»`の左辺を`?+«{a}»′`の形で表してみましょう"
+msgstr ""
+
+#: Game.Levels.MulEX.L04_mul_eq_self
+msgid "因数分解"
+msgstr ""
+
+#: Game.Levels.MulEX.L04_mul_eq_self
+msgid "なんか`cases`の役割多くない？やっぱり。"
+msgstr ""
+
+#: Game.Levels.MulEX.L05_mul_left_ne_zero
+msgid "因数分解・裏(mul_left_ne_zero)"
+msgstr ""
+
+#: Game.Levels.MulEX.L05_mul_left_ne_zero
+msgid "## 説明\n"
+"`P→Q`のようなゴールに対して`intro h`とすると、\n"
+"仮定`h:P`が追加され、ゴールが`Q`になります。\n"
+"また、`∀(a:ℕ),P a`にたいして`intro n`とすると、\n"
+"仮定に`n:ℕ`が追加され、ゴールが`P n`になります。\n"
+"\n"
+"## 補足\n"
+"一部、`intro`が使えなさそうでも使える場合があります。\n"
+"例\n"
+"`N≠M`:これは`(N=M)→False`の略記です。\n"
+"`¬P`:これは`P→False`の略記です。"
+msgstr ""
+
+#: Game.Levels.MulEX.L05_mul_left_ne_zero
+msgid "## 新しいタクティク：`intro`\n"
+"\"PならばQ\"といった形のゴールに対して使えます。\n"
+"\n"
+"$p→q$に対する裏：$¬p→¬q$"
+msgstr ""
+
+#: Game.Levels.MulEX.L05_mul_left_ne_zero
+msgid "`a≠b`は`a=b→False`の略記。\n"
+"  直接入力するなら`\\ne`を使おう！"
+msgstr ""
+
+#: Game.Levels.MulEX.L05_mul_left_ne_zero
+msgid "## 説明\n"
+"$a,b$を自然数とする。$ab≠0$なら$b≠0$である。"
+msgstr ""
+
+#: Game.Levels.MulEX.L05_mul_left_ne_zero
+msgid "$∀\\{a,b\\}∈ℕ²,ab≠0→b≠0$"
+msgstr ""
+
+#: Game.Levels.MulEX.L05_mul_left_ne_zero
+msgid "`intro`でどうぞ。"
+msgstr ""
+
+#: Game.Levels.MulEX.L05_mul_left_ne_zero
+msgid "ここで`0≠0`は`(0=0)→False`の略記であることを思い出しましょう"
+msgstr ""
+
+#: Game.Levels.MulEX.L05_mul_left_ne_zero
+msgid "とうとう`cases`以外にも光が...！"
+msgstr ""
+
+#: Game.Levels.MulEX.L06_intro_forall
+msgid "(*‘∀‘)"
+msgstr ""
+
+#: Game.Levels.MulEX.L06_intro_forall
+msgid "**exact、apply無効**(余裕があればなぜ無効なのか考えてみよう！)\n"
+"\n"
+"## 全称記号\n"
+"∀←これです。\n"
+"`∀(a:ℕ),P a`は、\n"
+"全ての$a$に対して$P a$を満たすということを表します。\n"
+"`intro`が使えます。"
+msgstr ""
+
+#: Game.Levels.MulEX.L06_intro_forall
+msgid "`∀x,P x`は、全ての`x`で`P x`であることを表しています。\n"
+"  直接入力するなら`\\all`を使おう！"
+msgstr ""
+
+#: Game.Levels.MulEX.L06_intro_forall
+msgid "$∃e∈ℕ,∀n∈ℕ,ne=n$"
+msgstr ""
+
+#: Game.Levels.MulEX.L06_intro_forall
+msgid "これはまだ準備段階にすぎません..."
+msgstr ""
+
+#: Game.Levels.MulEX.L07_mul_ne_zero
+msgid "対偶(mul_ne_zero)"
+msgstr ""
+
+#: Game.Levels.MulEX.L07_mul_ne_zero
+msgid "**`rewrite`、`rfl`無効**\n"
+"対偶とは何でしょうか？"
+msgstr ""
+
+#: Game.Levels.MulEX.L07_mul_ne_zero
+msgid "## 説明\n"
+"`contrapose! h`とすると、ゴールと仮定`h`が入れ替わり、さらに両方が否定されます。\n"
+"対偶ですね"
+msgstr ""
+
+#: Game.Levels.MulEX.L07_mul_ne_zero
+msgid "## 説明\n"
+"$a,b$を自然数とする。$a≠0$かつ$b≠0$なら$ab≠0$である。"
+msgstr ""
+
+#: Game.Levels.MulEX.L07_mul_ne_zero
+msgid "$∀\\{a,b\\}∈ℕ²,(a≠0∧b≠0)→ab≠0$"
+msgstr ""
+
+#: Game.Levels.MulEX.L07_mul_ne_zero
+msgid "なぜ簡単な問題が2連続で出たのでしょう？\n"
+"しかもこれEXTRAだし。\n"
+"「嵐の前の静けさ」ですかね。"
+msgstr ""
+
+#: Game.Levels.MulEX.L08_mul_right_cancel
+msgid "Re:→"
+msgstr ""
+
+#: Game.Levels.MulEX.L08_mul_right_cancel
+msgid "マジかよ。(想定解23行)\n"
+"\n"
+"## revert\n"
+"新しいタクティク`revert`をアンロックしました。\n"
+"`revert`は`intro`の逆のことをします。\n"
+"...いつ使うの？"
+msgstr ""
+
+#: Game.Levels.MulEX.L08_mul_right_cancel
+msgid "## 説明\n"
+"`intro`の逆です。"
+msgstr ""
+
+#: Game.Levels.MulEX.L08_mul_right_cancel
+msgid "## 説明\n"
+"$a,b$を自然数とする。$x≠0$かつ$ax=bx$なら$a=b$である。"
+msgstr ""
+
+#: Game.Levels.MulEX.L08_mul_right_cancel
+msgid "$∀\\{a,b,x\\}∈ℕ³,(x≠0∧ax=bx)→ab≠0$"
+msgstr ""
+
+#: Game.Levels.MulEX.L08_mul_right_cancel
+msgid "`revert «{b}»`"
+msgstr ""
+
+#: Game.Levels.MulEX.L08_mul_right_cancel
+msgid "`induction «{a}»`"
+msgstr ""
+
+#: Game.Levels.MulEX.L08_mul_right_cancel
+msgid "`cases «{b}»`"
+msgstr ""
+
+#: Game.Levels.MulEX.L08_mul_right_cancel
+msgid "この問題はEXTRAの中でも最強...!\n"
+"もう後はウィニングランです！"
+msgstr ""
+
+#: Game.Levels.MulEX.L09_mul_right_eq_one
+msgid "1*1"
+msgstr ""
+
+#: Game.Levels.MulEX.L09_mul_right_eq_one
+msgid "`mul_eq_zero`と見た目だけ似ていますね。見た目だけ。"
+msgstr ""
+
+#: Game.Levels.MulEX.L09_mul_right_eq_one
+msgid "## 説明\n"
+"$a,b$を自然数とする。$ab=1$なら$a=1$である。"
+msgstr ""
+
+#: Game.Levels.MulEX.L09_mul_right_eq_one
+msgid "$∀\\{a,b\\}∈ℕ²,ab=1→b=1$"
+msgstr ""
+
+#: Game.Levels.MulEX.L09_mul_right_eq_one
+msgid "お疲れ様です。"
+msgstr ""
+
+#: Game.Levels.MulEX
+msgid "World x EX"
+msgstr ""
+
+#: Game.Levels.MulEX
+msgid "World xのハードモードです。"
+msgstr ""
+
+#: Game.Levels.Parity.L01_introduce
+msgid "偶奇"
+msgstr ""
+
+#: Game.Levels.Parity.L01_introduce
+msgid "偶数、奇数について考えましょう！"
+msgstr ""
+
+#: Game.Levels.Parity.L01_introduce
+msgid "## 説明\n"
+"0は偶数"
+msgstr ""
+
+#: Game.Levels.Parity.L01_introduce
+msgid "自然数が偶数か判定する\n"
+"  `even n ↔ ∃ (m : ℕ), m * 2 = n`"
+msgstr ""
+
+#: Game.Levels.Parity.L01_introduce
+msgid "0 is even"
+msgstr ""
+
+#: Game.Levels.Parity.L01_introduce
+msgid "`exists`"
+msgstr ""
+
+#: Game.Levels.Parity.L01_introduce
+msgid "0は偶数ですね！"
+msgstr ""
+
+#: Game.Levels.Parity.L02_odd_or_even
+msgid "偶奇-2"
+msgstr ""
+
+#: Game.Levels.Parity.L02_odd_or_even
+msgid "偶数か奇数です。全ての数は"
+msgstr ""
+
+#: Game.Levels.Parity.L02_odd_or_even
+msgid "## 説明\n"
+"自然数は偶数か奇数"
+msgstr ""
+
+#: Game.Levels.Parity.L02_odd_or_even
+msgid "自然数が奇数か判定する\n"
+"  `odd n ↔ ∃ (m : ℕ), m*2+1 = n`"
+msgstr ""
+
+#: Game.Levels.Parity.L02_odd_or_even
+msgid "$∀n∈ℕ,even n∨odd n$"
+msgstr ""
+
+#: Game.Levels.Parity.L02_odd_or_even
+msgid "`induction`"
+msgstr ""
+
+#: Game.Levels.Parity.L02_odd_or_even
+msgid "自然数は偶数か奇数"
+msgstr ""
+
+#: Game.Levels.Parity.L03_odd_nand_even
+msgid "偶奇-3"
+msgstr ""
+
+#: Game.Levels.Parity.L03_odd_nand_even
+msgid "自然数は偶数と奇数の\n"
+"ど　ち　ら　か　一　方です。"
+msgstr ""
+
+#: Game.Levels.Parity.L03_odd_nand_even
+msgid "## 説明\n"
+"$a=b$なら$b=a$"
+msgstr ""
+
+#: Game.Levels.Parity.L03_odd_nand_even
+msgid "## 説明\n"
+"自然数が(偶数かつ奇数)にならない"
+msgstr ""
+
+#: Game.Levels.Parity.L03_odd_nand_even
+msgid "$∀n∈ℕ,even n∨odd n$"
+msgstr ""
+
+#: Game.Levels.Parity.L03_odd_nand_even
+msgid "Q.何でこんな難しいんですか?\n"
+"\n"
+"A.私も同意見です"
+msgstr ""
+
+#: Game.Levels.Parity
+msgid "World Parity"
+msgstr ""
+
+#: Game.Levels.Parity
+msgid "偶数と奇数のやつ。"
 msgstr ""
 
 #: Game
-msgid "Game Template"
+msgid "自然数ゲーム"
 msgstr ""
 
 #: Game
-msgid "You should use this game as a template for your own game and add your own levels."
+msgid "こんにちは。自然数ゲームへようこそ。\n"
+"このゲームは、Leanを使って様々な自然数の性質を証明します。\n"
+"おっと、そんなに身構える必要はありませんよ。"
+msgstr ""
+
+#: Game
+msgid "Githubのリンク：https://github.com/csharpython/nat-game-ja\n"
+"使ったテンプレート：https://github.com/hhu-adam/GameSkeleton\n"
+"参考と一部コードの元：https://github.com/leanprover-community/NNG4/\n"
+"Lean jaのDiscord：https://discord.com/invite/p32ZfnVawh"
+msgstr ""
+
+#: Game
+msgid "自然数ゲーム"
+msgstr ""
+
+#: Game
+msgid "自然数の性質を証明してみましょう"
 msgstr ""

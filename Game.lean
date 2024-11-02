@@ -1,26 +1,31 @@
-import Game.Levels.DemoWorld
+import Game.Levels.Tutorial
+import Game.Levels.Add
+import Game.Levels.Mul
+import Game.Levels.Pow
+import Game.Levels.Le
+import Game.Levels.MulEX
+import Game.Levels.Parity
 
 -- Here's what we'll put on the title screen
-Title "Hello World Game"
+Title "自然数ゲーム"
 Introduction
 "
-This text appears on the starting page where one selects the world/level to play.
-You can use markdown.
+こんにちは。自然数ゲームへようこそ。
+このゲームは、Leanを使って様々な自然数の性質を証明します。
+おっと、そんなに身構える必要はありませんよ。
 "
 
 Info "
-Here you can put additional information about the game. It is accessible
-from the starting through the drop-down menu.
-
-For example: Game version, Credits, Link to Github and Zulip, etc.
-
-Use markdown.
+Githubのリンク：https://github.com/csharpython/nat-game-ja
+使ったテンプレート：https://github.com/hhu-adam/GameSkeleton
+参考と一部コードの元：https://github.com/leanprover-community/NNG4/
+Lean jaのDiscord：https://discord.com/invite/p32ZfnVawh
 "
 
 /-! Information to be displayed on the servers landing page. -/
-Languages "English"
-CaptionShort "Game Template"
-CaptionLong "You should use this game as a template for your own game and add your own levels."
+Languages "Japanese"
+CaptionShort "自然数ゲーム"
+CaptionLong "自然数の性質を証明してみましょう"
 -- Prerequisites "" -- add this if your game depends on other games
 -- CoverImage "images/cover.png"
 
