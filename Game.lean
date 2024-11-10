@@ -16,7 +16,7 @@ Introduction
 "
 
 Info "
-Githubのリンク：https://github.com/csharpython/nat-game-ja
+Githubのリンク：https://github.com/csharpython/re-nat-game
 使ったテンプレート：https://github.com/hhu-adam/GameSkeleton
 参考と一部コードの元：https://github.com/leanprover-community/NNG4/
 Lean jaのDiscord：https://discord.com/invite/p32ZfnVawh

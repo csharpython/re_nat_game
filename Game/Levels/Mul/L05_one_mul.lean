@@ -19,11 +19,11 @@ TheoremTab "*"
 
 /--
 ## 説明
-$n$を自然数とする。$1\*n=n$である。
+$n$を自然数とする。$1 \times n=n$である。
 -/
 TheoremDoc MyGame.one_mul as "one_mul" in "*"
 
-/--$∀n∈ℕ,1 × n = n$-/
+/--$∀n∈ℕ,1 \times n = n$-/
 Statement one_mul (n:ℕ) : 1 * n = n := by
   Branch
     rewrite[mul_comm]

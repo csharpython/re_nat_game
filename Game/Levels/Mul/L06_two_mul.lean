@@ -16,11 +16,11 @@ TheoremTab "*"
 
 /--
 ## 説明
-$n$を自然数とする。$2\*n=n+n$である。
+$n$を自然数とする。$2 \times n=n+n$である。
 -/
 TheoremDoc MyGame.two_mul as "two_mul" in "*"
 
-/--$∀n∈ℕ,2 × n = n + n$-/
+/--$∀n∈ℕ,2 \times n = n + n$-/
 Statement two_mul (n:ℕ) : 2 * n = n + n := by
   rewrite[two_eq_succ_one,succ_mul,one_mul]
   rfl

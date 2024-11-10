@@ -16,7 +16,7 @@ TheoremTab "*"
 
 /--
 ## 説明
-$a,b,m$を自然数とする。$a≤b$なら$a\*m≤b\*m$である。
+$a,b,m$を自然数とする。$a≤b$なら$am≤bm$である。
 -/
 TheoremDoc MyGame.mul_le_mul_right as "mul_le_mul_right" in "*"
 

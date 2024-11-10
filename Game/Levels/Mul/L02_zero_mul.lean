@@ -20,11 +20,11 @@ TheoremTab "*"
 
 /--
 ## 説明
-$x$を自然数とする。$0*x=0$である。
+$x$を自然数とする。$0x=0$である。
 -/
 TheoremDoc MyGame.zero_mul as "zero_mul" in "*"
 
-/--$∀n∈ℕ,0 × n = 0$-/
+/--$∀n∈ℕ,0n = 0$-/
 Statement zero_mul (n:ℕ) : 0 * n = 0 := by
   induction n
   exact mul_zero 0

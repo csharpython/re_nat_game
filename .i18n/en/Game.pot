@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Sat Nov  2 13:48:12 2024\n"
+"POT-Creation-Date: Fri Nov  8 13:44:10 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -642,7 +642,7 @@ msgstr ""
 
 #: Game.Levels.Mul.L01_mul_one
 msgid "## 説明\n"
-"$x$を自然数とする。$x*1=x$である。"
+"$n$を自然数とする。$n \\ times 1=n$である。"
 msgstr ""
 
 #: Game.Levels.Mul.L01_mul_one
@@ -654,16 +654,16 @@ msgstr ""
 
 #: Game.Levels.Mul.L01_mul_one
 msgid "## 説明\n"
-"$a$を自然数とする。$a*0=a$である。"
+"$n$を自然数とする。$n \\times 0=0$である。"
 msgstr ""
 
 #: Game.Levels.Mul.L01_mul_one
 msgid "## 説明\n"
-"$a,b$を自然数とする。$a\\*b′=a*b+a$である。"
+"$a,b$を自然数とする。$a \\times b′=ab+a$である。"
 msgstr ""
 
 #: Game.Levels.Mul.L01_mul_one
-msgid "$∀n∈ℕ,n × 1 = n$"
+msgid "$∀n∈ℕ,n \\times 1 = n$"
 msgstr ""
 
 #: Game.Levels.Mul.L01_mul_one
@@ -687,11 +687,11 @@ msgstr ""
 
 #: Game.Levels.Mul.L02_zero_mul
 msgid "## 説明\n"
-"$x$を自然数とする。$0*x=0$である。"
+"$x$を自然数とする。$0x=0$である。"
 msgstr ""
 
 #: Game.Levels.Mul.L02_zero_mul
-msgid "$∀n∈ℕ,0 × n = 0$"
+msgid "$∀n∈ℕ,0n = 0$"
 msgstr ""
 
 #: Game.Levels.Mul.L02_zero_mul
@@ -708,11 +708,11 @@ msgstr ""
 
 #: Game.Levels.Mul.L03_succ_mul
 msgid "## 説明\n"
-"$m,n$を自然数とする。$m′\\*n=m\\*n+n$である。"
+"$m,n$を自然数とする。$m′n=mn+n$である。"
 msgstr ""
 
 #: Game.Levels.Mul.L03_succ_mul
-msgid "$∀\\{n,m\\}∈ℕ²,m′ × n = m ⨯ n + n$"
+msgid "$∀\\{n,m\\}∈ℕ²,m′n = mn + n$"
 msgstr ""
 
 #: Game.Levels.Mul.L03_succ_mul
@@ -741,11 +741,11 @@ msgstr ""
 
 #: Game.Levels.Mul.L04_mul_comm
 msgid "## 説明\n"
-"$m,n$を自然数とする。$m\\*n=n\\*m$である。"
+"$m,n$を自然数とする。$mn=nm$である。"
 msgstr ""
 
 #: Game.Levels.Mul.L04_mul_comm
-msgid "$∀\\{n,m\\}∈ℕ²,m × n = n ⨯ m$"
+msgid "$∀\\{n,m\\}∈ℕ²,mn = nm$"
 msgstr ""
 
 #: Game.Levels.Mul.L04_mul_comm
@@ -764,11 +764,11 @@ msgstr ""
 
 #: Game.Levels.Mul.L05_one_mul
 msgid "## 説明\n"
-"$n$を自然数とする。$1\\*n=n$である。"
+"$n$を自然数とする。$1 \\times n=n$である。"
 msgstr ""
 
 #: Game.Levels.Mul.L05_one_mul
-msgid "$∀n∈ℕ,1 × n = n$"
+msgid "$∀n∈ℕ,1 \\times n = n$"
 msgstr ""
 
 #: Game.Levels.Mul.L05_one_mul
@@ -793,11 +793,11 @@ msgstr ""
 
 #: Game.Levels.Mul.L06_two_mul
 msgid "## 説明\n"
-"$n$を自然数とする。$2\\*n=n+n$である。"
+"$n$を自然数とする。$2 \\times n=n+n$である。"
 msgstr ""
 
 #: Game.Levels.Mul.L06_two_mul
-msgid "$∀n∈ℕ,2 × n = n + n$"
+msgid "$∀n∈ℕ,2 \\times n = n + n$"
 msgstr ""
 
 #: Game.Levels.Mul.L06_two_mul
@@ -1426,7 +1426,7 @@ msgstr ""
 
 #: Game.Levels.MulEX.L02_mul_le_mul_right
 msgid "## 説明\n"
-"$a,b,m$を自然数とする。$a≤b$なら$a\\*m≤b\\*m$である。"
+"$a,b,m$を自然数とする。$a≤b$なら$am≤bm$である。"
 msgstr ""
 
 #: Game.Levels.MulEX.L02_mul_le_mul_right
@@ -1451,11 +1451,11 @@ msgstr ""
 
 #: Game.Levels.MulEX.L03_le_mul_right
 msgid "## 説明\n"
-"$a,b$を自然数とする。$a≤a*b′$である。"
+"$a,b$を自然数とする。$a≤a \\times b′$である。"
 msgstr ""
 
 #: Game.Levels.MulEX.L03_le_mul_right
-msgid "$∀\\{a,b\\}∈ℕ² , a≤a(b′)$"
+msgid "$∀\\{a,b\\}∈ℕ² , a≤a \\times b′$"
 msgstr ""
 
 #: Game.Levels.MulEX.L03_le_mul_right
@@ -1480,7 +1480,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.MulEX.L04_mul_eq_self
-msgid "$∀\\{a,b\\}∈ℕ²,a′*b=a′→b=1$"
+msgid "$∀\\{a,b\\}∈ℕ²,a′b=a′→b=1$"
 msgstr ""
 
 #: Game.Levels.MulEX.L04_mul_eq_self
@@ -1788,7 +1788,7 @@ msgid "こんにちは。自然数ゲームへようこそ。\n"
 msgstr ""
 
 #: Game
-msgid "Githubのリンク：https://github.com/csharpython/nat-game-ja\n"
+msgid "Githubのリンク：https://github.com/csharpython/re-nat-game\n"
 "使ったテンプレート：https://github.com/hhu-adam/GameSkeleton\n"
 "参考と一部コードの元：https://github.com/leanprover-community/NNG4/\n"
 "Lean jaのDiscord：https://discord.com/invite/p32ZfnVawh"

@@ -21,7 +21,7 @@ TheoremTab "*"
 
 /--
 ## 説明
-$x$を自然数とする。$x*1=x$である。
+$n$を自然数とする。$n \ times 1=n$である。
 -/
 TheoremDoc MyGame.mul_one as "mul_one" in "*"
 
@@ -36,19 +36,19 @@ NewDefinition MyGame.mul
 
 /--
 ## 説明
-$a$を自然数とする。$a*0=a$である。
+$n$を自然数とする。$n \times 0=0$である。
 -/
 TheoremDoc MyGame.mul_zero as "mul_zero" in "*"
 
 /--
 ## 説明
-$a,b$を自然数とする。$a\*b′=a*b+a$である。
+$a,b$を自然数とする。$a \times b′=ab+a$である。
 -/
 TheoremDoc MyGame.mul_succ as "mul_succ" in "*"
 
 NewTheorem MyGame.mul_zero MyGame.mul_succ
 
-/--$∀n∈ℕ,n × 1 = n$-/
+/--$∀n∈ℕ,n \times 1 = n$-/
 Statement mul_one (n:ℕ) : n * 1 = n := by
   Hint "1って何だっけ?"
   rewrite[one_eq_succ_zero,mul_succ,mul_zero,zero_add]

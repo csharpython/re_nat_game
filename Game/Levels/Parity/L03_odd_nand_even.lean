@@ -57,5 +57,5 @@ A.私も同意見です
 /- Use these commands to add items to the game's inventory. -/
 
 -- NewTactic obtain
-NewTheorem NewTheorem eq_comm
+NewTheorem eq_comm
 -- NewDefinition Nat Add Eq
