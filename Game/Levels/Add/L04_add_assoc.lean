@@ -1,5 +1,3 @@
-import Game.Metadata
-import Game.Levels.Add.L01_zero_add
 import Game.Levels.Add.L02_succ_add
 
 World "Addition"

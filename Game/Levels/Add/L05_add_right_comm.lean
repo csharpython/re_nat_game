@@ -1,4 +1,3 @@
-import Game.Metadata
 import Game.Levels.Add.L03_Add_comm
 import Game.Levels.Add.L04_add_assoc
 
@@ -25,12 +24,12 @@ TheoremDoc MyGame.add_right_comm as "add_right_comm" in "+"
 /--$∀\{x,y,z\}∈ℕ^3,x + y + z = x + z + y$-/
 Statement add_right_comm (x y z:ℕ) : x + y + z = x + z + y := by
   Hint "先ほど証明した結合法則が使えないでしょうか？"
-  rewrite[add_assoc,add_comm y,←add_assoc]
+  rewrite[add_assoc,add_comm y,add_assoc]
   rfl
 Conclusion "
 私の回答を載せておきますね：
 ```
-rewrite[add_assoc,add_comm y,←add_assoc]
+rewrite[add_assoc,add_comm y,add_assoc]
 rfl
 ```
 "

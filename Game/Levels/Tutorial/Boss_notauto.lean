@@ -1,6 +1,3 @@
-import Game.Metadata
-import Game.MyObj.MyNat.Function
-import Game.MyObj.MyNat.Numdef
 import Game.Levels.Tutorial.L05_A1EqS
 
 World "Tutorial"

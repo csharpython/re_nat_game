@@ -1,4 +1,3 @@
-import Game.Metadata
 import Game.Levels.Pow.L01_pow_one
 import Game.Levels.Pow.L03_one_pow
 import Game.Levels.Pow.L05_mul_pow

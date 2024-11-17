@@ -22,7 +22,7 @@ $x$を自然数とする。$x^{a+b}=x^a x^b$である。
 -/
 TheoremDoc MyGame.pow_add as "pow_add" in "^"
 
-/--$∀\{x,a,b\}∈ℕ³→x^{a+b}=x^a x^b$-/
+/--$∀\{x,a,b\}∈ℕ³,x^{a+b}=x^a x^b$-/
 Statement pow_add (x a b:ℕ) : x ^ (a + b) = x ^ a * x ^ b := by
   Hint(hidden := true) "まあ、`induction b`ですね。"
   induction b

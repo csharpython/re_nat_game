@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Fri Nov  8 13:44:10 2024\n"
+"POT-Creation-Date: Sun Nov 17 11:35:24 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -437,7 +437,7 @@ msgstr ""
 #: Game.Levels.Add.L05_add_right_comm
 msgid "私の回答を載せておきますね：\n"
 "```\n"
-"rewrite[add_assoc,add_comm y,←add_assoc]\n"
+"rewrite[add_assoc,add_comm y,add_assoc]\n"
 "rfl\n"
 "```"
 msgstr ""
@@ -922,7 +922,7 @@ msgstr ""
 
 #: Game.Levels.Pow.L01_pow_one
 msgid "## 説明\n"
-"$a,b$を自然数とする。$a^b′=a^b\\*a$である。"
+"$a,b$を自然数とする。$a^{b′}=a^ba$である。"
 msgstr ""
 
 #: Game.Levels.Pow.L01_pow_one
@@ -995,7 +995,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Pow.L04_pow_add
-msgid "$∀\\{x,a,b\\}∈ℕ³→x^{a+b}=x^a x^b$"
+msgid "$∀\\{x,a,b\\}∈ℕ³,x^{a+b}=x^a x^b$"
 msgstr ""
 
 #: Game.Levels.Pow.L04_pow_add
@@ -1020,7 +1020,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Pow.L05_mul_pow
-msgid "$∀\\{x,a,b\\}∈ℕ³→(ab)^x=a^x b^x$"
+msgid "$∀\\{x,a,b\\}∈ℕ³,(ab)^x=a^x b^x$"
 msgstr ""
 
 #: Game.Levels.Pow.L05_mul_pow
@@ -1767,6 +1767,33 @@ msgstr ""
 msgid "Q.何でこんな難しいんですか?\n"
 "\n"
 "A.私も同意見です"
+msgstr ""
+
+#: Game.Levels.Parity.L04_mul_eq_odd
+msgid "偶奇-4"
+msgstr ""
+
+#: Game.Levels.Parity.L04_mul_eq_odd
+msgid "奇数x奇数=奇数"
+msgstr ""
+
+#: Game.Levels.Parity.L04_mul_eq_odd
+msgid "## 説明\n"
+"二つの自然数の積が奇数なら二つの自然数は奇数"
+msgstr ""
+
+#: Game.Levels.Parity.L04_mul_eq_odd
+msgid "## 説明\n"
+"ゴールを分解します。\n"
+"todo"
+msgstr ""
+
+#: Game.Levels.Parity.L04_mul_eq_odd
+msgid "$二つの自然数の積が奇数なら二つの自然数は奇数$"
+msgstr ""
+
+#: Game.Levels.Parity.L04_mul_eq_odd
+msgid "ポチ"
 msgstr ""
 
 #: Game.Levels.Parity

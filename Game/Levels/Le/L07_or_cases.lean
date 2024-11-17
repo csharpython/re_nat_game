@@ -1,4 +1,3 @@
-import Game.Metadata
 import Game.Levels.Add.L07_add_left_cancel
 
 World "Le"

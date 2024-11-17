@@ -1,4 +1,3 @@
-import Game.Metadata
 import Game.Levels.Pow.L01_pow_one
 
 World "Power"

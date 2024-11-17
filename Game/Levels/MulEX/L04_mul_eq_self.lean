@@ -22,7 +22,7 @@ TheoremDoc MyGame.mul_eq_self as "mul_eq_self" in "*"
 /--$∀\{a,b\}∈ℕ²,a′b=a′→b=1$-/
 Statement mul_eq_self (a b:ℕ)(h:a′*b=a′) : b=1 := by
   Hint(hidden := true) "`cases`でどうぞ。案の定。"
-  cases b with b
+  cases b
   rewrite[mul_zero] at h
   exact False.elim (zero_ne_succ _ h)
   Hint(hidden := true) "ここで`{h}`の左辺を`?+{a}′`の形で表してみましょう"
@@ -30,10 +30,10 @@ Statement mul_eq_self (a b:ℕ)(h:a′*b=a′) : b=1 := by
   apply add_left_eq_self at h
   Hint(hidden := true) "因数分解"
   apply mul_eq_zero at h
-  cases h with h h
-  rewrite[eq_comm] at h
-  exact False.elim (zero_ne_succ _ h)
-  rewrite[h,one_eq_succ_zero]
+  cases h
+  rewrite[eq_comm] at h_1
+  exact False.elim (zero_ne_succ _ h_1)
+  rewrite[h_1,one_eq_succ_zero]
   rfl
 Conclusion "
 なんか`cases`の役割多くない？やっぱり。

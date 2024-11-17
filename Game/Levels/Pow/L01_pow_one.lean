@@ -41,7 +41,7 @@ TheoremDoc MyGame.pow_zero as "pow_zero" in "^"
 
 /--
 ## 説明
-$a,b$を自然数とする。$a^b′=a^b\*a$である。
+$a,b$を自然数とする。$a^{b′}=a^ba$である。
 -/
 TheoremDoc MyGame.pow_succ as "pow_succ" in "^"
 

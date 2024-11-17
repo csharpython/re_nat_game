@@ -42,8 +42,7 @@ TheoremDoc MyGame.succ_inj as "succ_inj" in "ℕ"
 Statement add_right_cancel (x y n:ℕ)(h:x + n = y + n) : x = y := by
   Hint (strict := true) "とりあえず`induction n`しましょうか。"
   induction n
-  rewrite[add_zero,add_zero] at h
-  rewrite[h]
+  rewrite[←add_zero x,←add_zero y,h]
   rfl
   Hint (hidden := true) "succ.injが使えるように変形してみましょう。"
   rewrite[add_succ,add_succ] at h

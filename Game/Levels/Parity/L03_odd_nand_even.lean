@@ -46,7 +46,7 @@ Statement odd_nand_even(n:ℕ) : ¬(even n ∧ odd n) := by
   exact False.elim (zero_ne_succ n l)
   exists a
   rewrite[succ_mul,two_eq_succ_one,add_succ,←two_eq_succ_one] at l
-  exact succ_inj _ _ l
+  exact succ_inj _ n l
 Conclusion "
 Q.何でこんな難しいんですか?
 

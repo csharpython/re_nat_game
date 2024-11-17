@@ -43,8 +43,8 @@ TheoremDoc MyGame.le_trans as "le_trans" in "≤"
 Statement le_trans (a b c:ℕ)(h1 : a ≤ b)(h2 : b ≤ c) : a ≤ c := by
   cases h1
   cases h2
-  exists w_1+w
-  rewrite[h_1,h,add_comm w_1,add_assoc]
+  exists w+w_1
+  rewrite[h_1,h,add_assoc]
   rfl
 
 Conclusion "
