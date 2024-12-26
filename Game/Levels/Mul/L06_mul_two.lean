@@ -4,7 +4,7 @@ import Game.Levels.Mul.L05_one_mul
 World "Multiplication"
 Level 6
 
-Title "倍増(two_mul)"
+Title "倍増(mul_two)"
 
 namespace MyGame
 
@@ -16,13 +16,13 @@ TheoremTab "*"
 
 /--
 ## 説明
-$n$を自然数とする。$2 \times n=n+n$である。
+$n$を自然数とする。$n \times 2=n+n$である。
 -/
-TheoremDoc MyGame.two_mul as "two_mul" in "*"
+TheoremDoc MyGame.mul_two as "mul_two" in "*"
 
 /--$∀n∈ℕ,2 \times n = n + n$-/
-Statement two_mul (n:ℕ) : 2 * n = n + n := by
-  rewrite[two_eq_succ_one,succ_mul,one_mul]
+Statement mul_two (n:ℕ) : n * 2 = n + n := by
+  rewrite[two_eq_succ_one,mul_succ,mul_one]
   rfl
 Conclusion "
 これ絶対数合わせだよね？？？

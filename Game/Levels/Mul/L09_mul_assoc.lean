@@ -22,6 +22,12 @@ $a,b,c$を自然数とする。$(ab)c=a(bc)$である。
 -/
 TheoremDoc MyGame.mul_assoc as "mul_assoc" in "*"
 
+/--
+## 説明
+$a=b$なら$b=a$
+-/
+TheoremDoc eq_comm as "eq_comm" in "Prop"
+
 /--$∀\{a,b,c\}∈ℕ³,a(bc) = (ab)c$-/
 Statement mul_assoc (a b c:ℕ) : (a * b) * c = a * (b * c) := by
   Hint "とりあえず帰納法を使いましょう。
@@ -40,5 +46,5 @@ Conclusion "
 /- Use these commands to add items to the game's inventory. -/
 
 -- NewTactic induction
--- NewLemma Nat.add_comm Nat.add_assoc
+NewTheorem eq_comm
 -- NewDefinition Nat Add Eq

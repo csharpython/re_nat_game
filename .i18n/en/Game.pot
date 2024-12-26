@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Sun Nov 17 11:35:24 2024\n"
+"POT-Creation-Date: Thu Dec 26 03:27:28 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -783,24 +783,24 @@ msgstr ""
 msgid "いろいろな方法で証明ができるぞ...!"
 msgstr ""
 
-#: Game.Levels.Mul.L06_two_mul
-msgid "倍増(two_mul)"
+#: Game.Levels.Mul.L06_mul_two
+msgid "倍増(mul_two)"
 msgstr ""
 
-#: Game.Levels.Mul.L06_two_mul
+#: Game.Levels.Mul.L06_mul_two
 msgid "何で入れた？？？？"
 msgstr ""
 
-#: Game.Levels.Mul.L06_two_mul
+#: Game.Levels.Mul.L06_mul_two
 msgid "## 説明\n"
-"$n$を自然数とする。$2 \\times n=n+n$である。"
+"$n$を自然数とする。$n \\times 2=n+n$である。"
 msgstr ""
 
-#: Game.Levels.Mul.L06_two_mul
+#: Game.Levels.Mul.L06_mul_two
 msgid "$∀n∈ℕ,2 \\times n = n + n$"
 msgstr ""
 
-#: Game.Levels.Mul.L06_two_mul
+#: Game.Levels.Mul.L06_mul_two
 msgid "これ絶対数合わせだよね？？？"
 msgstr ""
 
@@ -865,6 +865,11 @@ msgstr ""
 #: Game.Levels.Mul.L09_mul_assoc
 msgid "## 説明\n"
 "$a,b,c$を自然数とする。$(ab)c=a(bc)$である。"
+msgstr ""
+
+#: Game.Levels.Mul.L09_mul_assoc
+msgid "## 説明\n"
+"$a=b$なら$b=a$"
 msgstr ""
 
 #: Game.Levels.Mul.L09_mul_assoc
@@ -1396,11 +1401,6 @@ msgstr ""
 
 #: Game.Levels.MulEX.L01_mul_eq_zero
 msgid "## 説明\n"
-"$a=b$なら$b=a$"
-msgstr ""
-
-#: Game.Levels.MulEX.L01_mul_eq_zero
-msgid "## 説明\n"
 "$a,b$を自然数とする。$ab=0$なら$a=0$か$b=0$である。"
 msgstr ""
 
@@ -1711,7 +1711,7 @@ msgid "0は偶数ですね！"
 msgstr ""
 
 #: Game.Levels.Parity.L02_odd_or_even
-msgid "偶奇-2"
+msgid "偶∨奇"
 msgstr ""
 
 #: Game.Levels.Parity.L02_odd_or_even
@@ -1741,17 +1741,12 @@ msgid "自然数は偶数か奇数"
 msgstr ""
 
 #: Game.Levels.Parity.L03_odd_nand_even
-msgid "偶奇-3"
+msgid "偶↑奇"
 msgstr ""
 
 #: Game.Levels.Parity.L03_odd_nand_even
 msgid "自然数は偶数と奇数の\n"
 "ど　ち　ら　か　一　方です。"
-msgstr ""
-
-#: Game.Levels.Parity.L03_odd_nand_even
-msgid "## 説明\n"
-"$a=b$なら$b=a$"
 msgstr ""
 
 #: Game.Levels.Parity.L03_odd_nand_even
@@ -1770,16 +1765,32 @@ msgid "Q.何でこんな難しいんですか?\n"
 msgstr ""
 
 #: Game.Levels.Parity.L04_mul_eq_odd
-msgid "偶奇-4"
+msgid "偶×奇"
 msgstr ""
 
 #: Game.Levels.Parity.L04_mul_eq_odd
-msgid "奇数x奇数=奇数"
+msgid "奇数x奇数=奇数\n"
+"\n"
+"同値関係について\n"
+"「同値」とはなんでしょうか。\n"
+"これはある二つの命題がともに真であるか、\n"
+"ともに偽である事を示しています。\n"
+"内部的には$P↔Q$は$P→Q∧Q→P$として扱われています!\n"
+"**ちなみにrewriteもできます！**`\n"
+"\n"
+"`have`について\n"
+"示したいことがだんだん複雑になってきましたね...\n"
+"こんな時、`have`を使うことで補題を示せます！"
 msgstr ""
 
 #: Game.Levels.Parity.L04_mul_eq_odd
 msgid "## 説明\n"
 "二つの自然数の積が奇数なら二つの自然数は奇数"
+msgstr ""
+
+#: Game.Levels.Parity.L04_mul_eq_odd
+msgid "## 説明\n"
+"Andの導入則"
 msgstr ""
 
 #: Game.Levels.Parity.L04_mul_eq_odd
@@ -1793,6 +1804,27 @@ msgid "$二つの自然数の積が奇数なら二つの自然数は奇数$"
 msgstr ""
 
 #: Game.Levels.Parity.L04_mul_eq_odd
+msgid "ポチ"
+msgstr ""
+
+#: Game.Levels.Parity.L05_add_eq_even
+msgid "偶+奇"
+msgstr ""
+
+#: Game.Levels.Parity.L05_add_eq_even
+msgid "奇数+奇数=偶数"
+msgstr ""
+
+#: Game.Levels.Parity.L05_add_eq_even
+msgid "## 説明\n"
+"偶数となにかの和が偶数なら両方偶数"
+msgstr ""
+
+#: Game.Levels.Parity.L05_add_eq_even
+msgid "$偶数となにかの和が偶数なら両方偶数$"
+msgstr ""
+
+#: Game.Levels.Parity.L05_add_eq_even
 msgid "ポチ"
 msgstr ""
 

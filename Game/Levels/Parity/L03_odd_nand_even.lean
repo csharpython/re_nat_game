@@ -3,7 +3,7 @@ import Game.Levels.Parity.L01_introduce
 World "Parity"
 Level 3
 
-Title "偶奇-3"
+Title "偶↑奇"
 
 namespace MyGame
 
@@ -14,12 +14,6 @@ Introduction "
 
 TheoremTab "2n"
 
-
-/--
-## 説明
-$a=b$なら$b=a$
--/
-TheoremDoc eq_comm as "eq_comm" in "Prop"
 /--
 ## 説明
 自然数が(偶数かつ奇数)にならない
@@ -57,5 +51,5 @@ A.私も同意見です
 /- Use these commands to add items to the game's inventory. -/
 
 -- NewTactic obtain
-NewTheorem eq_comm
+-- NewTheorem eq_comm
 -- NewDefinition Nat Add Eq

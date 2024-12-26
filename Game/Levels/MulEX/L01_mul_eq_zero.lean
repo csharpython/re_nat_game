@@ -16,12 +16,6 @@ TheoremTab "*"
 
 /--
 ## 説明
-$a=b$なら$b=a$
--/
-TheoremDoc eq_comm as "eq_comm" in "Prop"
-
-/--
-## 説明
 $a,b$を自然数とする。$ab=0$なら$a=0$か$b=0$である。
 -/
 TheoremDoc MyGame.mul_eq_zero as "mul_eq_zero" in "*"
@@ -44,5 +38,5 @@ Conclusion "
 /- Use these commands to add items to the game's inventory. -/
 
 -- NewTactic induction
-NewTheorem eq_comm
+-- NewTheorem eq_comm
 -- NewDefinition Nat Add Eq

@@ -42,4 +42,4 @@ Conclusion "
 
 -- NewTactic induction
 -- NewLemma Nat.add_comm Nat.add_assoc
--- NewDefinition Nat Add Eq
+NewDefinition even

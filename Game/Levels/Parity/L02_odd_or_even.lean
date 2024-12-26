@@ -3,7 +3,7 @@ import Game.Levels.Parity.L01_introduce
 World "Parity"
 Level 2
 
-Title "偶奇-2"
+Title "偶∨奇"
 
 namespace MyGame
 
