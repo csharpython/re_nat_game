@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Thu Dec 26 03:27:28 2024\n"
+"POT-Creation-Date: Wed Feb  5 07:02:58 2025\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -797,7 +797,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Mul.L06_mul_two
-msgid "$∀n∈ℕ,2 \\times n = n + n$"
+msgid "$∀n∈ℕ,n \\times 2= n + n$"
 msgstr ""
 
 #: Game.Levels.Mul.L06_mul_two
@@ -1834,6 +1834,107 @@ msgstr ""
 
 #: Game.Levels.Parity
 msgid "偶数と奇数のやつ。"
+msgstr ""
+
+#: Game.Levels.Coprime.L01_introduce
+msgid "コプライム"
+msgstr ""
+
+#: Game.Levels.Coprime.L01_introduce
+msgid "ようこそ、World Coprimeへ。"
+msgstr ""
+
+#: Game.Levels.Coprime.L01_introduce
+msgid "## 説明\n"
+"1と自然数は互いに素"
+msgstr ""
+
+#: Game.Levels.Coprime.L01_introduce
+msgid "自然数が互いに素か判定する"
+msgstr ""
+
+#: Game.Levels.Coprime.L01_introduce
+msgid "coprime 1 any"
+msgstr ""
+
+#: Game.Levels.Coprime.L01_introduce
+msgid "1となにかは互いに素"
+msgstr ""
+
+#: Game.Levels.Coprime.L02_coprime_comm
+msgid "対称性"
+msgstr ""
+
+#: Game.Levels.Coprime.L02_coprime_comm
+msgid "対称性っていいよね。"
+msgstr ""
+
+#: Game.Levels.Coprime.L02_coprime_comm
+msgid "## 説明\n"
+"「互いに素」の対称性"
+msgstr ""
+
+#: Game.Levels.Coprime.L02_coprime_comm
+msgid "coprime n m ↔ coprime m n"
+msgstr ""
+
+#: Game.Levels.Coprime.L02_coprime_comm
+msgid "# Q.対称性ってなんでいいの？\n"
+"A.利用することで複雑な問題が一気にシンプルになることがある！\n"
+"そうでなくてもある程度楽できる！"
+msgstr ""
+
+#: Game.Levels.Coprime.L03_not_coprime
+msgid "否定"
+msgstr ""
+
+#: Game.Levels.Coprime.L03_not_coprime
+msgid "「互いに素」の否定はなんでしょう？"
+msgstr ""
+
+#: Game.Levels.Coprime.L03_not_coprime
+msgid "## 説明\n"
+"「互いに素」の否定"
+msgstr ""
+
+#: Game.Levels.Coprime.L03_not_coprime
+msgid "¬coprime n m↔..."
+msgstr ""
+
+#: Game.Levels.Coprime.L03_not_coprime
+msgid "対偶って便利だね"
+msgstr ""
+
+#: Game.Levels.Coprime.L04_parity_as_coprime
+msgid "帰着"
+msgstr ""
+
+#: Game.Levels.Coprime.L04_parity_as_coprime
+msgid "互いに素　と　偶奇　の関係について。"
+msgstr ""
+
+#: Game.Levels.Coprime.L04_parity_as_coprime
+msgid "## 説明\n"
+"「2と互いに素」と「奇数である」は同値"
+msgstr ""
+
+#: Game.Levels.Coprime.L04_parity_as_coprime
+msgid "coprime 2 n↔odd n"
+msgstr ""
+
+#: Game.Levels.Coprime.L04_parity_as_coprime
+msgid "え～想定解は43行です。\n"
+"ですがこれで、偶奇の問題を「互いに素」の問題として扱うことができるようになりました。"
+msgstr ""
+
+#: Game.Levels.Coprime
+msgid "World Coprime"
+msgstr ""
+
+#: Game.Levels.Coprime
+msgid "考えることがだんだん複雑になってきましたね...\n"
+"これはLean4に慣れた人向けのチャレンジステージです！\n"
+"数学の深淵へようこそ！(まだだいぶ早い)"
 msgstr ""
 
 #: Game

@@ -24,7 +24,7 @@ TheoremDoc MyGame.zero_is_even as "zero_is_even" in "2n"
   自然数が偶数か判定する
   `even n ↔ ∃ (m : ℕ), m * 2 = n`
 -/
-DefinitionDoc MyGame.even as "even"
+DefinitionDoc even as "even"
 
 
 /--0 is even-/

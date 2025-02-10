@@ -6,7 +6,7 @@ import Game.MyObj.Tactic.cases
 import Mathlib.Tactic.ApplyAt
 import Mathlib.Tactic.NthRewrite
 import Mathlib.Tactic.Contrapose
-
+import Mathlib.Tactic.PushNeg
 -- import Mathlib.Tactic.Common
 
 /-! Use this file to add things that should be available in all levels.

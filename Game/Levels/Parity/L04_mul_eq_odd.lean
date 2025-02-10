@@ -85,5 +85,5 @@ Conclusion "
 /- Use these commands to add items to the game's inventory. -/
 
 NewTactic constructor «have»
---NewTheorem NewTheorem eq_comm
+NewTheorem And.intro
 -- NewDefinition Nat Add Eq

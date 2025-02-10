@@ -28,7 +28,7 @@ Statement mul_eq_self (a b:ℕ)(h:a′*b=a′) : b=1 := by
   Hint(hidden := true) "ここで`{h}`の左辺を`?+{a}′`の形で表してみましょう"
   rewrite[mul_succ] at h
   apply add_left_eq_self at h
-  Hint(hidden := true) "因数分解"
+  Hint(hidden := true)(strict := true) "因数分解"
   apply mul_eq_zero at h
   cases h
   rewrite[eq_comm] at h_1
