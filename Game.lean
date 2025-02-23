@@ -6,6 +6,7 @@ import Game.Levels.Le
 import Game.Levels.MulEX
 import Game.Levels.Parity
 import Game.Levels.Coprime
+import Game.Levels.Challenge
 
 -- Here's what we'll put on the title screen
 Title "自然数ゲーム"
