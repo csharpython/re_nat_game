@@ -25,7 +25,7 @@ Lean jaのDiscord：https://discord.com/invite/p32ZfnVawh
 "
 
 /-! Information to be displayed on the servers landing page. -/
-Languages "Japanese"
+-- Languages "Japanese"
 CaptionShort "自然数ゲーム"
 CaptionLong "自然数の性質を証明してみましょう"
 -- Prerequisites "" -- add this if your game depends on other games
