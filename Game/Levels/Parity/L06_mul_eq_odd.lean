@@ -1,8 +1,8 @@
-import Game.Levels.Parity.L02_odd_or_even
-import Game.Levels.Parity.L03_odd_nand_even
+import Game.Levels.Parity.L04_not_odd
+import Game.Levels.Parity.L05_not_even
 
 World "Parity"
-Level 4
+Level 6
 
 Title "偶×奇"
 
@@ -10,13 +10,6 @@ namespace MyGame
 
 Introduction "
 奇数x奇数=奇数
-
-同値関係について
-「同値」とはなんでしょうか。
-これはある二つの命題がともに真であるか、
-ともに偽である事を示しています。
-内部的には$P↔Q$は$P→Q∧Q→P$として扱われています!
-**ちなみにrewriteもできます！**`
 
 `have`について
 示したいことがだんだん複雑になってきましたね...
@@ -84,6 +77,6 @@ Conclusion "
 
 /- Use these commands to add items to the game's inventory. -/
 
-NewTactic constructor «have»
+NewTactic «have»
 NewTheorem And.intro
 -- NewDefinition Nat Add Eq

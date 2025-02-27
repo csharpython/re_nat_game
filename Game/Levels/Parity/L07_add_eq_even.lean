@@ -1,7 +1,7 @@
-import Game.Levels.Parity.L02_odd_or_even
-import Game.Levels.Parity.L03_odd_nand_even
+import Game.Levels.Parity.L04_not_odd
+import Game.Levels.Parity.L05_not_even
 World "Parity"
-Level 5
+Level 7
 
 Title "偶+奇"
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Sun Feb 23 12:04:34 2025\n"
+"POT-Creation-Date: Thu Feb 27 11:04:25 2025\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -1764,67 +1764,107 @@ msgid "Q.何でこんな難しいんですか?\n"
 "A.私も同意見です"
 msgstr ""
 
-#: Game.Levels.Parity.L04_mul_eq_odd
-msgid "偶×奇"
+#: Game.Levels.Parity.L04_not_odd
+msgid "¬奇↔偶"
 msgstr ""
 
-#: Game.Levels.Parity.L04_mul_eq_odd
-msgid "奇数x奇数=奇数\n"
-"\n"
-"同値関係について\n"
+#: Game.Levels.Parity.L04_not_odd
+msgid "同値関係について\n"
 "「同値」とはなんでしょうか。\n"
 "これはある二つの命題がともに真であるか、\n"
 "ともに偽である事を示しています。\n"
 "内部的には$P↔Q$は$P→Q∧Q→P$として扱われています!\n"
-"**ちなみにrewriteもできます！**`\n"
+"**ちなみにrewriteもできます！**`"
+msgstr ""
+
+#: Game.Levels.Parity.L04_not_odd
+msgid "## 説明\n"
+"奇数でない自然数は偶数"
+msgstr ""
+
+#: Game.Levels.Parity.L04_not_odd
+msgid "$∀n∈ℕ,¬odd n↔even n$"
+msgstr ""
+
+#: Game.Levels.Parity.L04_not_odd
+msgid "これはよく使う補題です。これで、これを使うときに各コードが1行で済みます！"
+msgstr ""
+
+#: Game.Levels.Parity.L05_not_even
+msgid "¬偶↔奇"
+msgstr ""
+
+#: Game.Levels.Parity.L05_not_even
+msgid "もう一度やってみましょう"
+msgstr ""
+
+#: Game.Levels.Parity.L05_not_even
+msgid "## 説明\n"
+"偶数でない自然数は奇数"
+msgstr ""
+
+#: Game.Levels.Parity.L05_not_even
+msgid "$∀n∈ℕ,¬even n↔odd n$"
+msgstr ""
+
+#: Game.Levels.Parity.L05_not_even
+msgid "これもよく使う補題です。"
+msgstr ""
+
+#: Game.Levels.Parity.L06_mul_eq_odd
+msgid "偶×奇"
+msgstr ""
+
+#: Game.Levels.Parity.L06_mul_eq_odd
+msgid "奇数x奇数=奇数\n"
 "\n"
 "`have`について\n"
 "示したいことがだんだん複雑になってきましたね...\n"
 "こんな時、`have`を使うことで補題を示せます！"
 msgstr ""
 
-#: Game.Levels.Parity.L04_mul_eq_odd
+#: Game.Levels.Parity.L06_mul_eq_odd
 msgid "## 説明\n"
 "二つの自然数の積が奇数なら二つの自然数は奇数"
 msgstr ""
 
-#: Game.Levels.Parity.L04_mul_eq_odd
+#: Game.Levels.Parity.L06_mul_eq_odd
 msgid "## 説明\n"
 "Andの導入則"
 msgstr ""
 
-#: Game.Levels.Parity.L04_mul_eq_odd
+#: Game.Levels.Parity.L06_mul_eq_odd
 msgid "## 説明\n"
 "ゴールを分解します。\n"
 "todo"
 msgstr ""
 
-#: Game.Levels.Parity.L04_mul_eq_odd
+#: Game.Levels.Parity.L06_mul_eq_odd
 msgid "$二つの自然数の積が奇数なら二つの自然数は奇数$"
 msgstr ""
 
-#: Game.Levels.Parity.L04_mul_eq_odd
+#: Game.Levels.Parity.L06_mul_eq_odd
 msgid "ポチ"
 msgstr ""
 
-#: Game.Levels.Parity.L05_add_eq_even
+#: Game.Levels.Parity.L07_add_eq_even
 msgid "偶+奇"
 msgstr ""
 
-#: Game.Levels.Parity.L05_add_eq_even
+#: Game.Levels.Parity.L07_add_eq_even
 msgid "奇数+奇数=偶数"
 msgstr ""
 
-#: Game.Levels.Parity.L05_add_eq_even
+#: Game.Levels.Parity.L07_add_eq_even
 msgid "## 説明\n"
 "偶数となにかの和が偶数なら両方偶数"
 msgstr ""
 
-#: Game.Levels.Parity.L05_add_eq_even
+#: Game.Levels.Parity.L07_add_eq_even
 msgid "$偶数となにかの和が偶数なら両方偶数$"
 msgstr ""
 
-#: Game.Levels.Parity.L05_add_eq_even
+#: Game.Levels.Parity.L07_add_eq_even
 msgid "ポチ"
 msgstr ""
 
