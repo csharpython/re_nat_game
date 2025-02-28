@@ -1,6 +1,4 @@
-import Game.Metadata
-import Game.Levels.Tutorial
-import Game.Levels.Mul
+import Game.Levels.Pow.L03_one_pow
 
 World "Power"
 Level 4

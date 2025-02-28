@@ -1,4 +1,4 @@
-import Game.Levels.MulEX.L01_mul_eq_zero
+import Game.Levels.MulEX.L07_mul_ne_zero
 
 World "MulEX"
 Level 8

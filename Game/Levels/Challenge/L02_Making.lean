@@ -1,5 +1,5 @@
-import Game.Levels.MulEX
-import Game.Levels.Pow
+import Game.Levels.Challenge.L01_Beginning
+
 World "Challenge"
 Level 2
 

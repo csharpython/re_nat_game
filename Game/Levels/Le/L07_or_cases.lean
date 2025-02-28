@@ -1,4 +1,4 @@
-import Game.Levels.Add.L07_add_left_cancel
+import Game.Levels.Le.L06_le_symm
 
 World "Le"
 Level 7

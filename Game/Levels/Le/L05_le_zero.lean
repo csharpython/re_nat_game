@@ -1,7 +1,4 @@
-import Game.Metadata
-import Game.Levels.Tutorial
-import Game.Levels.Add
-import Game.MyObj.MyNat.Le
+import Game.Levels.Le.L04_le_trans
 
 World "Le"
 Level 5

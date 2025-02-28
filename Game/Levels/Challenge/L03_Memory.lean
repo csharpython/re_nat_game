@@ -1,4 +1,4 @@
-import Game.Levels.Challenge.L01_Beginning
+import Game.Levels.Challenge.L02_Making
 World "Challenge"
 Level 3
 

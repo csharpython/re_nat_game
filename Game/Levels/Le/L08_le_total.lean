@@ -1,6 +1,3 @@
-import Game.Levels.Le.L01_zero_le
-import Game.Levels.Le.L03_le_succ
-import Game.Levels.Le.L04_le_trans
 import Game.Levels.Le.L07_or_cases
 
 World "Le"
@@ -29,7 +26,7 @@ Statement le_total (a b:ℕ) : a ≤ b ∨ b′ ≤ a := by
   cases n_ih
   Hint(hidden := true)"さらに≤のcases！"
   cases h
-  Hint(hidden := true)"ついでに`{w}`もcases！"
+  Hint(hidden := true)"さらに`{w}`もcases！"
   cases w
   apply Or.inr
   exists 0

@@ -1,4 +1,4 @@
-import Game.Levels.Pow.L01_pow_one
+import Game.Levels.Pow.L05_mul_pow
 
 World "Power"
 Level 6

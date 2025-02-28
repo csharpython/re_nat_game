@@ -1,4 +1,5 @@
 import Game.Levels.MulEX
+import Game.Levels.Parity
 import Game.MyObj.MyNat.Coprime
 
 World "Coprime"

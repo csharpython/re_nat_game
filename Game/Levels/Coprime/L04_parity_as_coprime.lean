@@ -1,4 +1,3 @@
-import Game.Levels.Parity
 import Game.Levels.Coprime.L03_not_coprime
 
 World "Coprime"

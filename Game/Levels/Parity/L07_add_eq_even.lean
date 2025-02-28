@@ -1,5 +1,4 @@
-import Game.Levels.Parity.L04_not_odd
-import Game.Levels.Parity.L05_not_even
+import Game.Levels.Parity.L06_mul_eq_odd
 World "Parity"
 Level 7
 

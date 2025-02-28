@@ -1,5 +1,3 @@
-import Game.Metadata
-import Game.Levels.Mul.L04_mul_comm
 import Game.Levels.Mul.L07_mul_add
 
 World "Multiplication"

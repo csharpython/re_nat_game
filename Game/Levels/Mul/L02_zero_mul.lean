@@ -1,6 +1,4 @@
-import Game.Metadata
-import Game.Levels.Tutorial
-import Game.Levels.Add
+import Game.Levels.Mul.L01_mul_one
 
 World "Multiplication"
 Level 2

@@ -1,5 +1,4 @@
-import Game.Levels.Mul
-import Game.Levels.Le
+import Game.Levels.MulEX.L04_mul_eq_self
 
 World "MulEX"
 Level 5

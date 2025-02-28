@@ -1,4 +1,3 @@
-import Game.Levels.Parity.L02_odd_or_even
 import Game.Levels.Parity.L03_odd_nand_even
 
 World "Parity"

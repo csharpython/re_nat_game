@@ -1,6 +1,4 @@
-import Game.Levels.Pow.L01_pow_one
-import Game.Levels.Pow.L03_one_pow
-import Game.Levels.Pow.L05_mul_pow
+import Game.Levels.Pow.L06_pow_two
 
 World "Power"
 Level 7

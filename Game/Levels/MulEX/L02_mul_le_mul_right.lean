@@ -1,5 +1,4 @@
-import Game.Levels.Mul
-import Game.Levels.Le
+import Game.Levels.MulEX.L01_mul_eq_zero
 
 World "MulEX"
 Level 2

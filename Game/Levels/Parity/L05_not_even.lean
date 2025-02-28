@@ -1,5 +1,4 @@
-import Game.Levels.Parity.L02_odd_or_even
-import Game.Levels.Parity.L03_odd_nand_even
+import Game.Levels.Parity.L04_not_odd
 
 World "Parity"
 Level 5

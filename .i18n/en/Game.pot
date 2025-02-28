@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Thu Feb 27 11:04:25 2025\n"
+"POT-Creation-Date: Thu Feb 27 22:59:08 2025\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -1375,7 +1375,7 @@ msgid "さらに≤のcases！"
 msgstr ""
 
 #: Game.Levels.Le.L08_le_total
-msgid "ついでに`«{w}»`もcases！"
+msgid "さらに`«{w}»`もcases！"
 msgstr ""
 
 #: Game.Levels.Le.L08_le_total

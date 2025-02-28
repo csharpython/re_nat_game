@@ -1,4 +1,4 @@
-import Game.Levels.MulEX.L01_mul_eq_zero
+import Game.Levels.MulEX.L08_mul_right_cancel
 
 World "MulEX"
 Level 9

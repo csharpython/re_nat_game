@@ -1,5 +1,4 @@
-import Game.Levels.Mul
-import Game.Levels.Le
+import Game.Levels.MulEX.L05_mul_left_ne_zero
 
 World "MulEX"
 Level 6

@@ -1,5 +1,4 @@
-import Game.Levels.Mul
-import Game.Levels.Le
+import Game.Levels.MulEX.L02_mul_le_mul_right
 
 World "MulEX"
 Level 3

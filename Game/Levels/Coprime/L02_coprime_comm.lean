@@ -1,5 +1,4 @@
-import Game.Levels.MulEX
-import Game.MyObj.MyNat.Coprime
+import Game.Levels.Coprime.L01_introduce
 
 World "Coprime"
 Level 2

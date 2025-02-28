@@ -1,5 +1,4 @@
-import Game.Metadata
-import Game.Levels.Mul.L04_mul_comm
+import Game.Levels.Mul.L06_mul_two
 
 World "Multiplication"
 Level 7

@@ -1,6 +1,4 @@
-import Game.MyObj.MyNat.MyNat
-import Game.MyObj.MyNat.Numdef
-import Game.Metadata
+import Game.Levels.Add.L09_add_left_eq_self
 
 World "Addition"
 Level 10

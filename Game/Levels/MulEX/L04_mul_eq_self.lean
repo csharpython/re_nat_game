@@ -1,4 +1,4 @@
-import Game.Levels.MulEX.L01_mul_eq_zero
+import Game.Levels.MulEX.L03_le_mul_right
 
 World "MulEX"
 Level 4

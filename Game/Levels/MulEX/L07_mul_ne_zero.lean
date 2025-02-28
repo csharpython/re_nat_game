@@ -1,4 +1,4 @@
-import Game.Levels.MulEX.L01_mul_eq_zero
+import Game.Levels.MulEX.L06_intro_forall
 
 World "MulEX"
 Level 7
