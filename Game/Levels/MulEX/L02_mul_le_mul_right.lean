@@ -19,7 +19,7 @@ $a,b,m$を自然数とする。$a≤b$なら$am≤bm$である。
 -/
 TheoremDoc MyGame.mul_le_mul_right as "mul_le_mul_right" in "*"
 
-/--$∀\{a,b,m\}∈ℕ³ ,a ≤ b → am≤bm$-/
+/--$∀(a,b,m)∈ℕ^3 ,a ≤ b → am≤bm$-/
 Statement mul_le_mul_right (a b m:ℕ)(h : a ≤ b) : a * m ≤ b * m := by
   Hint(hidden := true) "`cases`でどうぞ"
   cases h

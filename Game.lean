@@ -29,7 +29,7 @@ Lean jaのDiscord：https://discord.com/invite/p32ZfnVawh
 CaptionShort "自然数ゲーム"
 CaptionLong "自然数の性質を証明してみましょう"
 -- Prerequisites "" -- add this if your game depends on other games
--- CoverImage "images/cover.png"
+CoverImage "images/ReNGame.png"
 
 /-! Build the game. Show's warnings if it found a problem with your game. -/
 MakeGame

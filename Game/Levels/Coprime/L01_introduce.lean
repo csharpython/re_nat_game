@@ -26,7 +26,7 @@ TheoremDoc MyGame.coprime_one as "coprime_one" in "Cop"
 DefinitionDoc coprime as "coprime"
 
 
-/--coprime 1 any-/
+/--$∀n∈ℕ,\operatorname{coprime} 1\ n$-/
 Statement coprime_one (n : ℕ) : coprime 1 n := by
   intro a b d h
   cases h

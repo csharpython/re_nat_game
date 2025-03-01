@@ -19,7 +19,7 @@ $a,b$を自然数とする。$a≤a \times b′$である。
 -/
 TheoremDoc MyGame.le_mul_right as "le_mul_right" in "*"
 
-/--$∀\{a,b\}∈ℕ² , a≤a \times b′$-/
+/--$∀(a,b)∈ℕ^2 , a≤a \times b′$-/
 Statement le_mul_right (a b:ℕ) : a  ≤ a * b′ := by
   Hint(hidden := true) "`cases`でどうぞ"
   exists a * b

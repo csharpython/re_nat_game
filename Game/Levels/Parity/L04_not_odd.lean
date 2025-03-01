@@ -14,6 +14,9 @@ Introduction "
 ともに偽である事を示しています。
 内部的には$P↔Q$は$P→Q∧Q→P$として扱われています!
 **ちなみにrewriteもできます！**`
+
+# `constructor`
+`constructor`はゴールを分解するタクティクです！
 "
 
 TheoremTab "2n"
@@ -24,8 +27,15 @@ TheoremTab "2n"
 -/
 TheoremDoc MyGame.not_odd as "not_odd" in "2n"
 
+/--
+## 説明1：Andの分解
+`P∧Q`に対して、`constructor`を使うと、ゴールが`P`と`Q`に変化します。
 
-/--$∀n∈ℕ,¬odd n↔even n$-/
+## 説明2：同値の分解
+`P↔Q`に対して、`constructor`を使うと、ゴールが`P→Q`と`Q→P`に変化します。
+-/
+TacticDoc constructor
+/--$∀n∈ℕ,¬\operatorname{odd} n↔\operatorname{even} n$-/
 Statement not_odd(n:ℕ) : ¬odd n↔even n := by
   constructor <;> intro
   cases odd_or_even n

@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Thu Feb 27 22:59:08 2025\n"
+"POT-Creation-Date: Sat Mar  1 06:04:40 2025\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -183,7 +183,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Tutorial.L04_add_zero
-msgid "$∀\\{a,b,c\\}∈ℕ^3,a + (b + 0) + (c + 0) = a + b + c$"
+msgid "$∀(a,b,c)∈ℕ^3,a + (b + 0) + (c + 0) = a + b + c$"
 msgstr ""
 
 #: Game.Levels.Tutorial.L04_add_zero
@@ -330,7 +330,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Add.L02_succ_add
-msgid "$∀\\{x,y\\}∈ℕ^2,x′ + y = (x + y)′$"
+msgid "$∀(x,y)∈ℕ^2,x′ + y = (x + y)′$"
 msgstr ""
 
 #: Game.Levels.Add.L02_succ_add
@@ -358,7 +358,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Add.L03_Add_comm
-msgid "$∀\\{x,y\\}∈ℕ^2,x + y = y + x$"
+msgid "$∀(x,y)∈ℕ^2,x + y = y + x$"
 msgstr ""
 
 #: Game.Levels.Add.L03_Add_comm
@@ -388,11 +388,11 @@ msgstr ""
 
 #: Game.Levels.Add.L04_add_assoc
 msgid "## 説明\n"
-"x yを自然数とする。x+y=y+xである。"
+"$x,y$を自然数とする。$x+y+z=x+(y+z)$である。"
 msgstr ""
 
 #: Game.Levels.Add.L04_add_assoc
-msgid "$∀\\{x,y,z\\}∈ℕ^3,x + y + z = x + (y + z)$"
+msgid "$∀(x,y,z)∈ℕ^3,x + y + z = x + (y + z)$"
 msgstr ""
 
 #: Game.Levels.Add.L04_add_assoc
@@ -427,7 +427,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Add.L05_add_right_comm
-msgid "$∀\\{x,y,z\\}∈ℕ^3,x + y + z = x + z + y$"
+msgid "$∀(x,y,z)∈ℕ^3,x + y + z = x + z + y$"
 msgstr ""
 
 #: Game.Levels.Add.L05_add_right_comm
@@ -475,7 +475,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Add.L06_add_right_cancel
-msgid "$∀\\{x,y,n\\}∈ℕ^3,x + n = y + n → x = y$"
+msgid "$∀(x,y,n)∈ℕ^3,x + n = y + n → x = y$"
 msgstr ""
 
 #: Game.Levels.Add.L06_add_right_cancel
@@ -515,7 +515,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Add.L07_add_left_cancel
-msgid "$∀\\{x,y,n\\}∈ℕ^3,n + x = n + y → x = y$"
+msgid "$∀(x,y,n)∈ℕ^3,n + x = n + y → x = y$"
 msgstr ""
 
 #: Game.Levels.Add.L07_add_left_cancel
@@ -552,7 +552,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Add.L08_add_right_eq_self
-msgid "$∀\\{x,y\\}∈ℕ^2,x + y = x → y = 0$"
+msgid "$∀(x,y)∈ℕ^2,x + y = x → y = 0$"
 msgstr ""
 
 #: Game.Levels.Add.L08_add_right_eq_self
@@ -584,7 +584,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Add.L09_add_left_eq_self
-msgid "$∀{x,y}∈ℕ^2,x + y = y → x = 0$"
+msgid "$∀(x,y)∈ℕ^2,x + y = y → x = 0$"
 msgstr ""
 
 #: Game.Levels.Add.L09_add_left_eq_self
@@ -712,7 +712,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Mul.L03_succ_mul
-msgid "$∀\\{n,m\\}∈ℕ²,m′n = mn + n$"
+msgid "$∀(n,m)∈ℕ^2,m′n = mn + n$"
 msgstr ""
 
 #: Game.Levels.Mul.L03_succ_mul
@@ -745,7 +745,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Mul.L04_mul_comm
-msgid "$∀\\{n,m\\}∈ℕ²,mn = nm$"
+msgid "$∀(n,m)∈ℕ^2,mn = nm$"
 msgstr ""
 
 #: Game.Levels.Mul.L04_mul_comm
@@ -818,7 +818,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Mul.L07_mul_add
-msgid "$∀\\{a,b,c\\}∈ℕ³,a(b+c) = ab + ac$"
+msgid "$∀(a,b,c)∈ℕ^3,a(b+c) = ab + ac$"
 msgstr ""
 
 #: Game.Levels.Mul.L07_mul_add
@@ -843,7 +843,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Mul.L08_add_mul
-msgid "$∀\\{a,b,c\\}∈ℕ³,a(b+c) = ab + ac$"
+msgid "$∀(a,b,c)∈ℕ³,(a+b)c=ac+bc$"
 msgstr ""
 
 #: Game.Levels.Mul.L08_add_mul
@@ -873,7 +873,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Mul.L09_mul_assoc
-msgid "$∀\\{a,b,c\\}∈ℕ³,a(bc) = (ab)c$"
+msgid "$∀(a,b,c)∈ℕ³,(ab)c=a(bc)$"
 msgstr ""
 
 #: Game.Levels.Mul.L09_mul_assoc
@@ -1000,7 +1000,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Pow.L04_pow_add
-msgid "$∀\\{x,a,b\\}∈ℕ³,x^{a+b}=x^a x^b$"
+msgid "$∀(x,a,b)∈ℕ^3,x^{a+b}=x^a x^b$"
 msgstr ""
 
 #: Game.Levels.Pow.L04_pow_add
@@ -1025,7 +1025,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Pow.L05_mul_pow
-msgid "$∀\\{x,a,b\\}∈ℕ³,(ab)^x=a^x b^x$"
+msgid "$∀(x,a,b)∈ℕ^3,(ab)^x=a^x b^x$"
 msgstr ""
 
 #: Game.Levels.Pow.L05_mul_pow
@@ -1227,7 +1227,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Le.L04_le_trans
-msgid "$∀\\{a,b,c\\}∈ℕ³,a ≤ b∧b ≤ c → a ≤ c$"
+msgid "$∀(a,b,c)∈ℕ³,a ≤ b∧b ≤ c → a ≤ c$"
 msgstr ""
 
 #: Game.Levels.Le.L04_le_trans
@@ -1288,7 +1288,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Le.L06_le_symm
-msgid "$∀\\{a,b\\}∈ℕ²,a ≤ b ∧ b ≤ a → a = b$"
+msgid "$∀(a,b)∈ℕ²,a ≤ b ∧ b ≤ a → a = b$"
 msgstr ""
 
 #: Game.Levels.Le.L06_le_symm
@@ -1359,7 +1359,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Le.L08_le_total
-msgid "$∀\\{a,b\\}∈ℕ²,a≤b∨b′≤a$"
+msgid "$∀(a,b)∈ℕ²,a≤b∨b′≤a$"
 msgstr ""
 
 #: Game.Levels.Le.L08_le_total
@@ -1405,7 +1405,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.MulEX.L01_mul_eq_zero
-msgid "$∀\\{a,b\\}∈ℕ² ,ab = 0 → a=0∨b=0$"
+msgid "$∀(a,b)∈ℕ^2 ,ab = 0 → a=0∨b=0$"
 msgstr ""
 
 #: Game.Levels.MulEX.L01_mul_eq_zero
@@ -1430,7 +1430,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.MulEX.L02_mul_le_mul_right
-msgid "$∀\\{a,b,m\\}∈ℕ³ ,a ≤ b → am≤bm$"
+msgid "$∀(a,b,m)∈ℕ^3 ,a ≤ b → am≤bm$"
 msgstr ""
 
 #: Game.Levels.MulEX.L02_mul_le_mul_right
@@ -1455,7 +1455,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.MulEX.L03_le_mul_right
-msgid "$∀\\{a,b\\}∈ℕ² , a≤a \\times b′$"
+msgid "$∀(a,b)∈ℕ^2 , a≤a \\times b′$"
 msgstr ""
 
 #: Game.Levels.MulEX.L03_le_mul_right
@@ -1480,7 +1480,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.MulEX.L04_mul_eq_self
-msgid "$∀\\{a,b\\}∈ℕ²,a′b=a′→b=1$"
+msgid "$∀(a,b)∈ℕ^2,a′b=a′→b=1$"
 msgstr ""
 
 #: Game.Levels.MulEX.L04_mul_eq_self
@@ -1535,7 +1535,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.MulEX.L05_mul_left_ne_zero
-msgid "$∀\\{a,b\\}∈ℕ²,ab≠0→b≠0$"
+msgid "$∀(a,b)∈ℕ^2,ab≠0→b≠0$"
 msgstr ""
 
 #: Game.Levels.MulEX.L05_mul_left_ne_zero
@@ -1598,7 +1598,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.MulEX.L07_mul_ne_zero
-msgid "$∀\\{a,b\\}∈ℕ²,(a≠0∧b≠0)→ab≠0$"
+msgid "$∀(a,b)∈ℕ^2,(a≠0∧b≠0)→ab≠0$"
 msgstr ""
 
 #: Game.Levels.MulEX.L07_mul_ne_zero
@@ -1631,7 +1631,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.MulEX.L08_mul_right_cancel
-msgid "$∀\\{a,b,x\\}∈ℕ³,(x≠0∧ax=bx)→ab≠0$"
+msgid "$∀(a,b,x)∈ℕ^3,(x≠0∧ax=bx)→ab≠0$"
 msgstr ""
 
 #: Game.Levels.MulEX.L08_mul_right_cancel
@@ -1665,7 +1665,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.MulEX.L09_mul_right_eq_one
-msgid "$∀\\{a,b\\}∈ℕ²,ab=1→b=1$"
+msgid "$∀(a,b)∈ℕ^2,ab=1→b=1$"
 msgstr ""
 
 #: Game.Levels.MulEX.L09_mul_right_eq_one
@@ -1699,7 +1699,7 @@ msgid "自然数が偶数か判定する\n"
 msgstr ""
 
 #: Game.Levels.Parity.L01_introduce
-msgid "0 is even"
+msgid "$\\operatorname{even} 0$"
 msgstr ""
 
 #: Game.Levels.Parity.L01_introduce
@@ -1729,7 +1729,7 @@ msgid "自然数が奇数か判定する\n"
 msgstr ""
 
 #: Game.Levels.Parity.L02_odd_or_even
-msgid "$∀n∈ℕ,even n∨odd n$"
+msgid "$∀n∈ℕ,\\operatorname{even} n∨\\operatorname{odd} n$"
 msgstr ""
 
 #: Game.Levels.Parity.L02_odd_or_even
@@ -1755,7 +1755,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Parity.L03_odd_nand_even
-msgid "$∀n∈ℕ,even n∨odd n$"
+msgid "$∀n∈ℕ,\\operatorname{even} n∨\\operatorname{odd} n$"
 msgstr ""
 
 #: Game.Levels.Parity.L03_odd_nand_even
@@ -1783,7 +1783,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Parity.L04_not_odd
-msgid "$∀n∈ℕ,¬odd n↔even n$"
+msgid "$∀n∈ℕ,¬\\operatorname{odd} n↔\\operatorname{even} n$"
 msgstr ""
 
 #: Game.Levels.Parity.L04_not_odd
@@ -1804,7 +1804,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Parity.L05_not_even
-msgid "$∀n∈ℕ,¬even n↔odd n$"
+msgid "$∀n∈ℕ,¬\\operatorname{even} n↔\\operatorname{odd} n$"
 msgstr ""
 
 #: Game.Levels.Parity.L05_not_even
@@ -1894,7 +1894,7 @@ msgid "自然数が互いに素か判定する"
 msgstr ""
 
 #: Game.Levels.Coprime.L01_introduce
-msgid "coprime 1 any"
+msgid "$∀n∈ℕ,\\operatorname{coprime} 1\\ n$"
 msgstr ""
 
 #: Game.Levels.Coprime.L01_introduce
@@ -1915,7 +1915,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Coprime.L02_coprime_comm
-msgid "coprime n m ↔ coprime m n"
+msgid "$\\operatorname{coprime} n\\ m ↔ \\operatorname{coprime} m\\ n$"
 msgstr ""
 
 #: Game.Levels.Coprime.L02_coprime_comm
@@ -1938,7 +1938,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Coprime.L03_not_coprime
-msgid "¬coprime n m↔..."
+msgid "$¬\\operatorname{coprime} n\\ m↔...$"
 msgstr ""
 
 #: Game.Levels.Coprime.L03_not_coprime
@@ -1959,7 +1959,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Coprime.L04_parity_as_coprime
-msgid "coprime 2 n↔odd n"
+msgid "$∀n∈ℕ,\\operatorname{coprime} 2\\ n↔\\operatorname{odd} n$"
 msgstr ""
 
 #: Game.Levels.Coprime.L04_parity_as_coprime
@@ -2017,6 +2017,11 @@ msgid "私はこのゲームを作ったきっかけについて話します。\
 msgstr ""
 
 #: Game.Levels.Challenge.L02_Making
+msgid "## 説明\n"
+"ピタゴラス数を生成する式。"
+msgstr ""
+
+#: Game.Levels.Challenge.L02_Making
 msgid "$(m^2-n^2)^2+(2mn)^2=(m^2+n^2)^2$"
 msgstr ""
 
@@ -2032,6 +2037,11 @@ msgstr ""
 #: Game.Levels.Challenge.L03_Memory
 msgid "このゲームについて振り返りましょう。\n"
 "(後で)"
+msgstr ""
+
+#: Game.Levels.Challenge.L03_Memory
+msgid "## 説明\n"
+"無限降下法。"
 msgstr ""
 
 #: Game.Levels.Challenge.L03_Memory

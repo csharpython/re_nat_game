@@ -43,7 +43,7 @@ $a,b$を自然数とする。$ab≠0$なら$b≠0$である。
 -/
 TheoremDoc MyGame.mul_left_ne_zero as "mul_left_ne_zero" in "*"
 
-/--$∀\{a,b\}∈ℕ²,ab≠0→b≠0$-/
+/--$∀(a,b)∈ℕ^2,ab≠0→b≠0$-/
 Statement mul_left_ne_zero (a b:ℕ)(h:a*b≠0) : b≠0 := by
   Hint "`intro`でどうぞ。"
   intro i

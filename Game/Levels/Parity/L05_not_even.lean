@@ -20,7 +20,7 @@ TheoremTab "2n"
 TheoremDoc MyGame.not_even as "not_even" in "2n"
 
 
-/--$∀n∈ℕ,¬even n↔odd n$-/
+/--$∀n∈ℕ,¬\operatorname{even} n↔\operatorname{odd} n$-/
 Statement not_even(n:ℕ) : ¬even n↔odd n := by
   constructor <;> intro
   cases odd_or_even n

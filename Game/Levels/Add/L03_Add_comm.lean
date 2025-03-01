@@ -20,7 +20,7 @@ $x,y$を自然数とする。$x+y=y+x$である。
 -/
 TheoremDoc MyGame.add_comm as "add_comm" in "+"
 
-/--$∀\{x,y\}∈ℕ^2,x + y = y + x$-/
+/--$∀(x,y)∈ℕ^2,x + y = y + x$-/
 Statement add_comm (x y:ℕ) : x + y = y + x := by
   Hint "どちらを選んでもいいです。とりあえずxについて帰納法しましょうか。"
   induction x

@@ -50,7 +50,7 @@ TheoremDoc MyGame.add_zero as "add_zero" in "+"
 
 NewTheorem MyGame.add_zero
 
-/--$∀\{a,b,c\}∈ℕ^3,a + (b + 0) + (c + 0) = a + b + c$-/
+/--$∀(a,b,c)∈ℕ^3,a + (b + 0) + (c + 0) = a + b + c$-/
 Statement (a b c : ℕ) : a + (b + 0) + (c + 0) = a + b + c := by
   Hint "`rewrite[add_zero]`で`b+0`が`b`になります。"
   rewrite[add_zero,add_zero]

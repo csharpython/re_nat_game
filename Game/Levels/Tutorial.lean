@@ -11,3 +11,4 @@ Title "Tutorial"
 Introduction "
 チュートリアルです。このワールドでLean4に慣れましょう。
 "
+Image "images/ReNGame.png"

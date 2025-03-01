@@ -25,7 +25,7 @@ $a=b$なら$b=a$
 -/
 TheoremDoc eq_comm as "eq_comm" in "Prop"
 
-/--$∀\{a,b,c\}∈ℕ³,a(bc) = (ab)c$-/
+/--$∀(a,b,c)∈ℕ³,(ab)c=a(bc)$-/
 Statement mul_assoc (a b c:ℕ) : (a * b) * c = a * (b * c) := by
   Hint "とりあえず帰納法を使いましょう。
   先ほど証明した`mul_add`を活用できるはずです。

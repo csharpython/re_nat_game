@@ -20,7 +20,7 @@ TheoremTab "Cop"
 TheoremDoc MyGame.not_coprime as "not_coprime" in "Cop"
 
 
-/--¬coprime n m↔...-/
+/--$¬\operatorname{coprime} n\ m↔...$-/
 Statement not_coprime (n m : ℕ) : ¬coprime n m ↔ ∃(a b d:ℕ),a*d=n∧b*d=m∧d≠1 := by
   rewrite[coprime]
   constructor

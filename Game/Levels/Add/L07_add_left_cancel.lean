@@ -30,7 +30,7 @@ $x,y,z$を自然数とする。$n+x=n+y$なら$x=y$である。
 TheoremDoc MyGame.add_left_cancel as "add_left_cancel" in "+"
 
 DisabledTactic rfl
-/--$∀\{x,y,n\}∈ℕ^3,n + x = n + y → x = y$-/
+/--$∀(x,y,n)∈ℕ^3,n + x = n + y → x = y$-/
 Statement add_left_cancel (x y n:ℕ)(h:n + x = n + y) : x = y := by
   rewrite[add_comm] at h
   Hint (hidden := true)(strict := true) "

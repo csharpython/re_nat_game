@@ -38,7 +38,7 @@ $x,y$を自然数とする。$x′=y′$なら、$x=y$である。
 -/
 TheoremDoc MyGame.succ_inj as "succ_inj" in "ℕ"
 
-/--$∀\{x,y,n\}∈ℕ^3,x + n = y + n → x = y$-/
+/--$∀(x,y,n)∈ℕ^3,x + n = y + n → x = y$-/
 Statement add_right_cancel (x y n:ℕ)(h:x + n = y + n) : x = y := by
   Hint (strict := true) "とりあえず`induction n`しましょうか。"
   induction n

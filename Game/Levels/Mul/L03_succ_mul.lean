@@ -19,7 +19,7 @@ $m,n$を自然数とする。$m′n=mn+n$である。
 -/
 TheoremDoc MyGame.succ_mul as "succ_mul" in "*"
 
-/--$∀\{n,m\}∈ℕ²,m′n = mn + n$-/
+/--$∀(n,m)∈ℕ^2,m′n = mn + n$-/
 Statement succ_mul (m n:ℕ) : m′ * n = m * n + n := by
   Hint "他の定理の証明を振り返ってみることは大切です。意外と形が似ていることが多いです。"
   induction n

@@ -20,7 +20,7 @@ TheoremTab "Cop"
 TheoremDoc MyGame.coprime_two as "coprime_two" in "Cop"
 
 
-/--coprime 2 n↔odd n-/
+/--$∀n∈ℕ,\operatorname{coprime} 2\ n↔\operatorname{odd} n$-/
 Statement coprime_two (n : ℕ) : coprime 2 n ↔ odd n := by
   constructor <;> intro h
   <;> contrapose! h

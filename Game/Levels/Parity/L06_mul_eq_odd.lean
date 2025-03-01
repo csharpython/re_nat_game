@@ -30,12 +30,12 @@ Andの導入則
 TheoremDoc And.intro as "And.intro" in "Prop"
 
 /--
-## 説明
-ゴールを分解します。
-todo
+## 全体説明
+補題を作成するタクティクです。
+***※構文が他のタクティクと比べて特殊です！***
+後で書く or 構文を単純化
 -/
-TacticDoc constructor
-
+TacticDoc have
 /--$二つの自然数の積が奇数なら二つの自然数は奇数$-/
 Statement mul_eq_odd(n m:ℕ) : odd (n*m) ↔ odd n ∧ odd m := by
   cases odd_or_even n

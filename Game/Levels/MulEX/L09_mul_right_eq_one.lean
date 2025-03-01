@@ -18,7 +18,7 @@ $a,b$を自然数とする。$ab=1$なら$a=1$である。
 -/
 TheoremDoc MyGame.mul_right_eq_one as "mul_right_eq_one" in "*"
 
-/--$∀\{a,b\}∈ℕ²,ab=1→b=1$-/
+/--$∀(a,b)∈ℕ^2,ab=1→b=1$-/
 Statement mul_right_eq_one (a b:ℕ)(h:a*b=1) : a=1 := by
   cases a with a a
   rewrite[zero_mul] at h

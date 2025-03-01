@@ -17,7 +17,7 @@ $a,b$を自然数とする。$a≤b$かつ$b≤a$なら$a=b$である。
 -/
 TheoremDoc MyGame.le_symm as "le_symm" in "≤"
 
-/--$∀\{a,b\}∈ℕ²,a ≤ b ∧ b ≤ a → a = b$-/
+/--$∀(a,b)∈ℕ²,a ≤ b ∧ b ≤ a → a = b$-/
 Statement le_symm (a b:ℕ)(h1 : a ≤ b)(h2 : b ≤ a) : a = b := by
   Hint "仮定で不等号は即`cases`!"
   cases h1

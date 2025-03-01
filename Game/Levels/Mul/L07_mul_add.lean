@@ -19,7 +19,7 @@ $a,b,c$を自然数とする。$a(b+c)=ab+ac$である。
 -/
 TheoremDoc MyGame.mul_add as "mul_add" in "*"
 
-/--$∀\{a,b,c\}∈ℕ³,a(b+c) = ab + ac$-/
+/--$∀(a,b,c)∈ℕ^3,a(b+c) = ab + ac$-/
 Statement mul_add (a b c:ℕ) : a * (b + c) = a * b + a * c := by
   Branch
     induction a

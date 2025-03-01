@@ -19,7 +19,7 @@ $a,b,c$を自然数とする。$(a+b)c=ac+bc$である。
 -/
 TheoremDoc MyGame.add_mul as "add_mul" in "*"
 
-/--$∀\{a,b,c\}∈ℕ³,a(b+c) = ab + ac$-/
+/--$∀(a,b,c)∈ℕ³,(a+b)c=ac+bc$-/
 Statement add_mul (a b c:ℕ) : (a + b) * c = a * c + b * c := by
   Hint (hidden := true) "`rewrite[mul_comm]`"
   rewrite[mul_comm,mul_add]

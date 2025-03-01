@@ -20,7 +20,7 @@ TheoremTab "Cop"
 TheoremDoc MyGame.coprime_comm as "coprime_comm" in "Cop"
 
 
-/--coprime n m ↔ coprime m n-/
+/--$\operatorname{coprime} n\ m ↔ \operatorname{coprime} m\ n$-/
 Statement coprime_comm (n m : ℕ) : coprime n m ↔ coprime m n := by
   constructor
   <;> intro h a b d i

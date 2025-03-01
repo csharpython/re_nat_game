@@ -16,7 +16,11 @@ Introduction "
 "
 
 TheoremTab "ℕ"
-
+/--
+## 説明
+ピタゴラス数を生成する式。
+-/
+TheoremDoc MyGame.pythagoras_numbers' as "pythagoras_numbers'" in "ℕ"
 /--$(m^2-n^2)^2+(2mn)^2=(m^2+n^2)^2$-/
 Statement pythagoras_numbers' (a b c:ℕ)(h:c+b^2=a^2) : c^2+(2*a*b)^2=(a^2+b^2)^2 := by
   rewrite[mul_pow,mul_pow,←h]-- Reduce a

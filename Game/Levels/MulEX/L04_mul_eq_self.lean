@@ -19,7 +19,7 @@ $a,b$を自然数とする。$a′b=a′$なら$b=1$である。
 -/
 TheoremDoc MyGame.mul_eq_self as "mul_eq_self" in "*"
 
-/--$∀\{a,b\}∈ℕ²,a′b=a′→b=1$-/
+/--$∀(a,b)∈ℕ^2,a′b=a′→b=1$-/
 Statement mul_eq_self (a b:ℕ)(h:a′*b=a′) : b=1 := by
   Hint(hidden := true) "`cases`でどうぞ。案の定。"
   cases b

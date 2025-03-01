@@ -25,7 +25,7 @@ TheoremDoc MyGame.odd_or_even as "odd_or_even" in "2n"
 DefinitionDoc MyGame.odd as "odd"
 
 
-/--$∀n∈ℕ,even n∨odd n$-/
+/--$∀n∈ℕ,\operatorname{even} n∨\operatorname{odd} n$-/
 Statement odd_or_even(n:ℕ) : even n ∨ odd n := by
   Hint(hidden := true) "`induction`"
   induction n with n hn

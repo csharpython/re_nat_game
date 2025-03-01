@@ -17,7 +17,7 @@ $a,b$を自然数とする。`a≤b`か`b′≤a`である。
 -/
 TheoremDoc MyGame.le_total as "le_total" in "≤"
 
-/--$∀\{a,b\}∈ℕ²,a≤b∨b′≤a$-/
+/--$∀(a,b)∈ℕ²,a≤b∨b′≤a$-/
 Statement le_total (a b:ℕ) : a ≤ b ∨ b′ ≤ a := by
   Hint(hidden := true)"まずは`induction a`！"
   induction a

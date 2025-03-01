@@ -20,7 +20,7 @@ $a,b$を自然数とする。$ab=0$なら$a=0$か$b=0$である。
 -/
 TheoremDoc MyGame.mul_eq_zero as "mul_eq_zero" in "*"
 
-/--$∀\{a,b\}∈ℕ² ,ab = 0 → a=0∨b=0$-/
+/--$∀(a,b)∈ℕ^2 ,ab = 0 → a=0∨b=0$-/
 Statement mul_eq_zero (a b:ℕ)(h:a*b=0) : a = 0 ∨ b = 0:= by
   Hint(hidden := true) "`cases`でどうぞ"
   cases a with a

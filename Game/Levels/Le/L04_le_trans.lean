@@ -36,7 +36,7 @@ $a,b,c$を自然数とする。$a≤b∧b≤c$なら$a≤c$である。
 -/
 TheoremDoc MyGame.le_trans as "le_trans" in "≤"
 
-/--$∀\{a,b,c\}∈ℕ³,a ≤ b∧b ≤ c → a ≤ c$-/
+/--$∀(a,b,c)∈ℕ³,a ≤ b∧b ≤ c → a ≤ c$-/
 Statement le_trans (a b c:ℕ)(h1 : a ≤ b)(h2 : b ≤ c) : a ≤ c := by
   cases h1
   cases h2

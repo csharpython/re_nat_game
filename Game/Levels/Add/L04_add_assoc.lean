@@ -17,11 +17,11 @@ $x+y+z$について話しましょう。
 
 /--
 ## 説明
-x yを自然数とする。x+y=y+xである。
+$x,y$を自然数とする。$x+y+z=x+(y+z)$である。
 -/
 TheoremDoc MyGame.add_assoc as "add_assoc" in "+"
 
-/--$∀\{x,y,z\}∈ℕ^3,x + y + z = x + (y + z)$-/
+/--$∀(x,y,z)∈ℕ^3,x + y + z = x + (y + z)$-/
 Statement add_assoc (x y z:ℕ) : x + y + z = x + (y + z) := by
   Hint "たぶんzに対して帰納法するのが一番楽です。"
   induction z

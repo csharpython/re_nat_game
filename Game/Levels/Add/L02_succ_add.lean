@@ -19,7 +19,7 @@ $x y$を自然数とする。$x′+y=(x+y)′$である。
 -/
 TheoremDoc MyGame.succ_add as "succ_add" in "+"
 
-/--$∀\{x,y\}∈ℕ^2,x′ + y = (x + y)′$-/
+/--$∀(x,y)∈ℕ^2,x′ + y = (x + y)′$-/
 Statement succ_add (x y:ℕ) : x′ + y = (x + y)′ := by
   Hint (hidden := true)"`induction y`"
   induction y

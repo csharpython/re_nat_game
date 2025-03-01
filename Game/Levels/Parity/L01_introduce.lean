@@ -27,7 +27,7 @@ TheoremDoc MyGame.zero_is_even as "zero_is_even" in "2n"
 DefinitionDoc even as "even"
 
 
-/--0 is even-/
+/--$\operatorname{even} 0$-/
 Statement zero_is_even : even 0 := by
   Hint(hidden := true) "`exists`"
   exists 0

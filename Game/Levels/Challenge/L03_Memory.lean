@@ -12,7 +12,11 @@ Introduction "
 "
 
 TheoremTab "ℕ"
-
+/--
+## 説明
+無限降下法。
+-/
+TheoremDoc MyGame.finite_decrease as "finite_decrease" in "ℕ"
 /--無限降下法-/
 Statement finite_decrease (f :ℕ → Prop)(h:∀(a:ℕ),f a→∃(b:ℕ),b′≤a∧f b) : ∀(x:ℕ),¬f x := by
   intro x

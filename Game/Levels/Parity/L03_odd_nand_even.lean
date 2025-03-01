@@ -21,7 +21,7 @@ TheoremTab "2n"
 TheoremDoc MyGame.odd_nand_even as "odd_nand_even" in "2n"
 
 
-/--$∀n∈ℕ,even n∨odd n$-/
+/--$∀n∈ℕ,\operatorname{even} n∨\operatorname{odd} n$-/
 Statement odd_nand_even(n:ℕ) : ¬(even n ∧ odd n) := by
   intro h
   cases h with l r

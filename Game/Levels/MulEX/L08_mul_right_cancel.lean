@@ -29,7 +29,7 @@ $a,b$を自然数とする。$x≠0$かつ$ax=bx$なら$a=b$である。
 -/
 TheoremDoc MyGame.mul_right_cancel as "mul_right_cancel" in "*"
 
-/--$∀\{a,b,x\}∈ℕ³,(x≠0∧ax=bx)→ab≠0$-/
+/--$∀(a,b,x)∈ℕ^3,(x≠0∧ax=bx)→ab≠0$-/
 Statement mul_right_cancel (a b x:ℕ)(hx:x≠0)(h:a*x=b*x) : a=b := by
   Hint (hidden := true) "`revert {b}`"
   revert b

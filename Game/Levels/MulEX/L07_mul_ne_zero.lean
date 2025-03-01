@@ -27,7 +27,7 @@ $a,b$を自然数とする。$a≠0$かつ$b≠0$なら$ab≠0$である。
 TheoremDoc MyGame.mul_ne_zero as "mul_ne_zero" in "*"
 
 DisabledTactic rewrite rfl
-/--$∀\{a,b\}∈ℕ²,(a≠0∧b≠0)→ab≠0$-/
+/--$∀(a,b)∈ℕ^2,(a≠0∧b≠0)→ab≠0$-/
 Statement mul_ne_zero (a b:ℕ)(h:a≠0∧b≠0) : a*b≠0:= by
   contrapose! h
   intro i
