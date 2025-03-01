@@ -3,6 +3,7 @@ import Game.MyObj.MyNat.MyNat
 
 import Game.MyObj.Tactic.induction
 import Game.MyObj.Tactic.cases
+import Game.MyObj.Tactic.have
 import Mathlib.Tactic.ApplyAt
 import Mathlib.Tactic.NthRewrite
 import Mathlib.Tactic.Contrapose

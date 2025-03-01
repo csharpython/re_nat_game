@@ -30,12 +30,15 @@ Andの導入則
 TheoremDoc And.intro as "And.intro" in "Prop"
 
 /--
-## 全体説明
+## 説明
 補題を作成するタクティクです。
-***※構文が他のタクティクと比べて特殊です！***
-後で書く or 構文を単純化
+
+## 使用法
+`have h : P1`
+とすると、ゴール`P1`が生成されます。
+そのゴールを解くと、本来のゴールに仮定`P1`が追加されます！
 -/
-TacticDoc have
+TacticDoc «have»
 /--$二つの自然数の積が奇数なら二つの自然数は奇数$-/
 Statement mul_eq_odd(n m:ℕ) : odd (n*m) ↔ odd n ∧ odd m := by
   cases odd_or_even n

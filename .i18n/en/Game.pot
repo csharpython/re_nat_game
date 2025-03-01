@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Sat Mar  1 06:04:40 2025\n"
+"POT-Creation-Date: Sat Mar  1 08:57:22 2025\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -1774,12 +1774,23 @@ msgid "同値関係について\n"
 "これはある二つの命題がともに真であるか、\n"
 "ともに偽である事を示しています。\n"
 "内部的には$P↔Q$は$P→Q∧Q→P$として扱われています!\n"
-"**ちなみにrewriteもできます！**`"
+"**ちなみにrewriteもできます！**`\n"
+"\n"
+"# `constructor`\n"
+"`constructor`はゴールを分解するタクティクです！"
 msgstr ""
 
 #: Game.Levels.Parity.L04_not_odd
 msgid "## 説明\n"
 "奇数でない自然数は偶数"
+msgstr ""
+
+#: Game.Levels.Parity.L04_not_odd
+msgid "## 説明1：Andの分解\n"
+"`P∧Q`に対して、`constructor`を使うと、ゴールが`P`と`Q`に変化します。\n"
+"\n"
+"## 説明2：同値の分解\n"
+"`P↔Q`に対して、`constructor`を使うと、ゴールが`P→Q`と`Q→P`に変化します。"
 msgstr ""
 
 #: Game.Levels.Parity.L04_not_odd
@@ -1835,8 +1846,12 @@ msgstr ""
 
 #: Game.Levels.Parity.L06_mul_eq_odd
 msgid "## 説明\n"
-"ゴールを分解します。\n"
-"todo"
+"補題を作成するタクティクです。\n"
+"\n"
+"## 使用法\n"
+"`have h : P1`\n"
+"とすると、ゴール`P1`が生成されます。\n"
+"そのゴールを解くと、本来のゴールに仮定`P1`が追加されます！"
 msgstr ""
 
 #: Game.Levels.Parity.L06_mul_eq_odd

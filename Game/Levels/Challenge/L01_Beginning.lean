@@ -27,9 +27,9 @@ TheoremTab "ℕ"
 TheoremDoc MyGame.complete_induction as "complete_induction" in "ℕ"
 /--完全帰納法-/
 Statement complete_induction (n:ℕ)(P:ℕ→Prop)(h:∀a,(∀b,b′≤a→P b)→P a) : P n := by
-  have h2 : ∃w,n≤w := by
-    exists n
-    exact le_rfl n
+  have h2 : ∃w,n≤w
+  exists n
+  exact le_rfl n
   cases h2
   revert n
   induction w

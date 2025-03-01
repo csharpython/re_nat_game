@@ -20,17 +20,17 @@ TheoremDoc MyGame.add_eq_even as "add_eq_even" in "2n"
 
 /--$偶数となにかの和が偶数なら両方偶数$-/
 Statement add_eq_even(n m:ℕ) : even (n+m)↔(even n ↔ even m) := by
-  have sym1 (x y:ℕ)(h: even (x+y))(i:even x) : even y := by
-    cases h
-    cases i
-    cases h
-    cases le_total w_1 w <;> cases h <;> cases h_2 <;> rewrite[add_mul] at h_1
-    apply add_left_cancel at h_1
-    exists w_2
-    rewrite[succ_mul,eq_comm,add_assoc,add_assoc] at h_1
-    apply add_right_eq_self at h_1
-    rewrite[two_eq_succ_one,succ_add,eq_comm] at h_1
-    exact False.elim (zero_ne_succ _ h_1)
+  have sym1 (x y:ℕ)(h: even (x+y))(i:even x) : even y
+  cases h
+  cases i
+  cases h
+  cases le_total w_1 w <;> cases h <;> cases h_2 <;> rewrite[add_mul] at h_1
+  apply add_left_cancel at h_1
+  exists w_2
+  rewrite[succ_mul,eq_comm,add_assoc,add_assoc] at h_1
+  apply add_right_eq_self at h_1
+  rewrite[two_eq_succ_one,succ_add,eq_comm] at h_1
+  exact False.elim (zero_ne_succ _ h_1)
   constructor <;> intro
   constructor <;> intro
   exact sym1 n m a a_1
