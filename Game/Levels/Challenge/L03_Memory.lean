@@ -8,7 +8,9 @@ namespace MyGame
 
 Introduction "
 このゲームについて振り返りましょう。
-(後で)
+今までいろいろなWorldに挑戦してきました。
+Add,Le,Mul,MulEX,Parity,Coprime,Pow,
+そして Challenge.
 "
 
 TheoremTab "ℕ"
@@ -31,7 +33,8 @@ Statement finite_decrease (f :ℕ → Prop)(h:∀(a:ℕ),f a→∃(b:ℕ),b′�
   exact a b p r
 
 Conclusion "
-ええ、いろいろなことがありました。それらのほとんどが、貴重なことでした。
+これら全てのworldは、ある1つの問題のためにありました。
+いま私たちは、数学の神秘へと、向かっているのです
 "
 
 -- NewTactic exists

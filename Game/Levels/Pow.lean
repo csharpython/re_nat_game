@@ -5,6 +5,7 @@ import Game.Levels.Pow.L04_pow_add
 import Game.Levels.Pow.L05_mul_pow
 import Game.Levels.Pow.L06_pow_two
 import Game.Levels.Pow.L07_pow_mul
+import Game.Levels.Pow.L08_squ_diff
 
 World "Power"
 Title "World ^"

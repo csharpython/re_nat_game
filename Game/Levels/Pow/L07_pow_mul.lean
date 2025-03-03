@@ -21,7 +21,7 @@ $x,a,b$を自然数とする。$(x ^ a) ^ b= x^{ab}$である。
 -/
 TheoremDoc MyGame.pow_mul as "pow_mul" in "^"
 
-/--$∀\{x,a,b\}∈ℕ³→(x^a)^b=x^{ab}$-/
+/--$∀(x,a,b)∈ℕ^3→(x^a)^b=x^{ab}$-/
 Statement pow_mul (x a b:ℕ) : (x^a)^b = x ^ (a * b) := by
   Hint(hidden := true) "まあ、`induction a`ですね。"
   induction a

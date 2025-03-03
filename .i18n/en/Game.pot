@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Sat Mar  1 08:57:22 2025\n"
+"POT-Creation-Date: Mon Mar  3 13:15:33 2025\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -1074,7 +1074,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Pow.L07_pow_mul
-msgid "$∀\\{x,a,b\\}∈ℕ³→(x^a)^b=x^{ab}$"
+msgid "$∀(x,a,b)∈ℕ^3→(x^a)^b=x^{ab}$"
 msgstr ""
 
 #: Game.Levels.Pow.L07_pow_mul
@@ -1084,6 +1084,29 @@ msgstr ""
 #: Game.Levels.Pow.L07_pow_mul
 msgid "そろそろ気づいてる人もいると思いますが、\n"
 "`World ^`はすべて今までのステージが元ネタになっています。"
+msgstr ""
+
+#: Game.Levels.Pow.L08_squ_diff
+msgid "因数(squ_diff)"
+msgstr ""
+
+#: Game.Levels.Pow.L08_squ_diff
+msgid "ごめん、さっき書いたの嘘だわ(後でこのレベル足しました)\n"
+"\n"
+"このゲームに負の数はありません。では引き算はどうやって表現すればいいでしょうか？"
+msgstr ""
+
+#: Game.Levels.Pow.L08_squ_diff
+msgid "## 説明\n"
+"$a,b,c$を自然数とする。$a=b+c$なら$a^2=(a+b)*c+b^2$である。"
+msgstr ""
+
+#: Game.Levels.Pow.L08_squ_diff
+msgid "$a^2-b^2=(a+b)(a-b)$"
+msgstr ""
+
+#: Game.Levels.Pow.L08_squ_diff
+msgid "これはきっといつか役立つはずです..."
 msgstr ""
 
 #: Game.Levels.Pow
@@ -2051,7 +2074,9 @@ msgstr ""
 
 #: Game.Levels.Challenge.L03_Memory
 msgid "このゲームについて振り返りましょう。\n"
-"(後で)"
+"今までいろいろなWorldに挑戦してきました。\n"
+"Add,Le,Mul,MulEX,Parity,Coprime,Pow,\n"
+"そして Challenge."
 msgstr ""
 
 #: Game.Levels.Challenge.L03_Memory
@@ -2064,7 +2089,54 @@ msgid "無限降下法"
 msgstr ""
 
 #: Game.Levels.Challenge.L03_Memory
-msgid "ええ、いろいろなことがありました。それらのほとんどが、貴重なことでした。"
+msgid "これら全てのworldは、ある1つの問題のためにありました。\n"
+"いま私たちは、数学の神秘へと、向かっているのです"
+msgstr ""
+
+#: Game.Levels.Pow.L09_squ_inj
+msgid "## 説明\n"
+"$a,b$を自然数とする。$a^2=b^2$なら$a=b$である。"
+msgstr ""
+
+#: Game.Levels.Pow.L09_squ_inj
+msgid "これはきっといつか役立つはずです..."
+msgstr ""
+
+#: Game.Levels.Challenge.L04_History
+msgid "歴史"
+msgstr ""
+
+#: Game.Levels.Challenge.L04_History
+msgid "ユークリッド原論について知っているでしょうか？\n"
+"これは「公理」という概念が明確に示された本の中で、最古のものとされています。\n"
+"現代の数式や数学理論に通じる基礎を築いた本ですね。"
+msgstr ""
+
+#: Game.Levels.Challenge.L04_History
+msgid "## 説明\n"
+"ピタゴラス数が自然数$m,n$を用いて$(m^2-n^2,2mn,m^2+n^2)$と表せること。"
+msgstr ""
+
+#: Game.Levels.Challenge.L04_History
+msgid "## 説明\n"
+"互いに素な自然数$x,y$の積が何かの2乗なら$x$は何かの2乗"
+msgstr ""
+
+#: Game.Levels.Challenge.L04_History
+msgid "## 説明\n"
+"互いに素な自然数$x,y$の積が$z$の2乗なら$x$と$z$は互いに素"
+msgstr ""
+
+#: Game.Levels.Challenge.L04_History
+msgid "$(m^2-n^2)^2+(2mn)^2=(m^2+n^2)^2$"
+msgstr ""
+
+#: Game.Levels.Challenge.L04_History
+msgid "「公理」は基礎であり、それゆえ少し異なるだけでまったく違った結論が得られます。\n"
+"非ユークリッド幾何学がその例です。\n"
+"基礎を固めることは重要です。\n"
+"さて、とうとうその基礎からとある事実を証明する時が来ました。\n"
+"検討を、祈ります。100行くらいあるこの証明をした君ならできるはずです。"
 msgstr ""
 
 #: Game.Levels.Challenge

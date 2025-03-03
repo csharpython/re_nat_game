@@ -22,7 +22,7 @@ TheoremDoc MyGame.odd_or_even as "odd_or_even" in "2n"
   自然数が奇数か判定する
   `odd n ↔ ∃ (m : ℕ), m*2+1 = n`
 -/
-DefinitionDoc MyGame.odd as "odd"
+DefinitionDoc odd as "odd"
 
 
 /--$∀n∈ℕ,\operatorname{even} n∨\operatorname{odd} n$-/
@@ -50,4 +50,4 @@ Conclusion "
 
 -- NewTactic induction
 -- NewLemma Nat.add_comm Nat.add_assoc
--- NewDefinition Nat Add Eq
+NewDefinition odd
