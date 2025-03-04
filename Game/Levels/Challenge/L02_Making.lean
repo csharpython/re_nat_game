@@ -3,16 +3,15 @@ import Game.Levels.Challenge.L01_Beginning
 World "Challenge"
 Level 2
 
-Title "制作"
+Title "複雑さと美しさ"
 
 namespace MyGame
 
 Introduction "
-私はこのゲームを作ったきっかけについて話します。
-私はNNG4を遊んでいました。なかなか興味深かったです。
-さて、私はそのゲームを翻訳機を使いながらプレイしていました。
-「NNG4をもっといろんな人に遊んでもらいたい」という思いから、NNG4の日本語版、
-つまりこのゲームを作ろうと思ったのです。
+ええ、この問題は複雑そうです。
+ですが私がこれをChallenge-2としたのには理由があります。
+これの逆は(実際にはもう少し複雑ですが)、フェルマーの最終定理のn=4の場合の証明に使われています。
+ゆえに...というには少し違うかもしれませんが、「シンプルさ」と「美しさ」は別物です。
 "
 
 TheoremTab "ℕ"
@@ -29,8 +28,7 @@ Statement pythagoras_numbers' (a b c:ℕ)(h:c+b^2=a^2) : c^2+(2*a*b)^2=(a^2+b^2)
   rewrite[mul_assoc (b^2),←pow_two,mul_comm (b^2),mul_assoc,mul_comm (c+b^2),←mul_assoc]
   rfl
 Conclusion "
-今はもうその目的は忘れられています...
-しかし、このゲームの製作は、はっきり言って、楽しかったです。
+ですが、数学者が単純で奥深いものに心惹かれるという点では正しいかもしれません。たぶん。
 "
 
 -- NewTactic exists

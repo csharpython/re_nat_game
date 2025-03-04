@@ -4,15 +4,17 @@ import Game.Levels.Pow
 World "Challenge"
 Level 1
 
-Title "始発点"
+Title "過去が形作る未来"
 
 namespace MyGame
 
 Introduction "
-私がLean4を知ったきっかけについて話しましょう。
-ある日、私は数学について色々調べていました。
-その時、Lean4と自動証明についての動画を見つけました。
-私がLean4に興味を持ったのは、それからでした。
+ユークリッド原論について知っているでしょうか？
+これは「公理」という概念が明確に示された本の中で、最古のものとされています。
+現代の数式や数学理論に通じる基礎を築いた本ですね。
+「公理」は基礎であり、それゆえ少し異なるだけでまったく違った結論が得られます。
+非ユークリッド幾何学がその例です。
+基礎を固めることは重要です。
 
 # Prop
 Propとは何でしょうか？Propとは、命題の事です。
@@ -52,7 +54,9 @@ Statement complete_induction (n:ℕ)(P:ℕ→Prop)(h:∀a,(∀b,b′≤a→P b)�
   rewrite[succ_add] at h_2
   exact succ_inj _ _ h_2
 Conclusion "
-そして私がNNG4について知ったのもそれがきっかけでした。
+そしてその過去に作られた基礎が、現代の数学を作っています。
+過去が現在を形作っているのです。
+そして未来も...
 "
 
 -- NewTactic exists

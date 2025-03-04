@@ -2,7 +2,7 @@ import Game.Levels.Challenge.L02_Making
 World "Challenge"
 Level 3
 
-Title "想い出"
+Title "はじまりとおわり"
 
 namespace MyGame
 
@@ -11,6 +11,8 @@ Introduction "
 今までいろいろなWorldに挑戦してきました。
 Add,Le,Mul,MulEX,Parity,Coprime,Pow,
 そして Challenge.
+
+公理からはじまったこの旅は、今、終わりを迎えます。
 "
 
 TheoremTab "ℕ"
@@ -33,8 +35,8 @@ Statement finite_decrease (f :ℕ → Prop)(h:∀(a:ℕ),f a→∃(b:ℕ),b′�
   exact a b p r
 
 Conclusion "
-これら全てのworldは、ある1つの問題のためにありました。
-いま私たちは、数学の神秘へと、向かっているのです
+しかし、これからも数学というものは続いていき、終わりなき旅となるでしょう。
+数学とLeanを、これからもよろしくお願いします。
 "
 
 -- NewTactic exists
